@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="389 24 102.798 35.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #58595b;
+      }
+
+      .cls-2 {
+        fill: #f94615;
+      }
+    </style>
+  </defs>
+  <g id="lien-logo-faixa-topo" transform="translate(389 24)">
+    <path id="Path_43" data-name="Path 43" class="cls-1" d="M2.625,0H0V35.5H23.482V33.069H2.625Z"/>
+    <rect id="Rectangle_592" data-name="Rectangle 592" class="cls-1" width="2.625" height="35.5" transform="translate(30.776)"/>
+    <rect id="Rectangle_593" data-name="Rectangle 593" class="cls-2" width="25.251" height="2.431" transform="translate(40.721 33.069)"/>
+    <rect id="Rectangle_594" data-name="Rectangle 594" class="cls-2" width="25.251" height="2.431" transform="translate(40.721)"/>
+    <rect id="Rectangle_595" data-name="Rectangle 595" class="cls-2" width="25.251" height="2.431" transform="translate(40.721 16.382)"/>
+    <path id="Path_44" data-name="Path 44" class="cls-1" d="M292.191,0V31.467L267.686,0H265.2V35.5h2.542V3.951L292.191,35.5h2.542V0Z" transform="translate(-191.935)"/>
+  </g>
+</svg>

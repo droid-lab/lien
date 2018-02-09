@@ -8,8 +8,11 @@
 @include font-face("Gotham-Black", "../../../fonts/Gotham-Black", null, null, eot woff ttf svg);
 @include font-face("Gotham-Book", "../../../fonts/Gotham-Book", null, null, eot woff ttf svg);
 @include font-face("Gotham-Medium", "../../../fonts/Gotham-Medium", null, null, eot woff ttf svg);
-@include font-face("Gotham-Thin", "../../../fonts/Gotham-Thin", null, null, eot woff ttf svg);
+//@include font-face("Gotham-Thin", "../../../fonts/Gotham-Thin", null, null, eot woff ttf svg);
+@include font-face("Gotham-Bold", "../../../fonts/Gotham-Bold", null, null, eot woff ttf svg);
 
 
-$font-primary   : 'Gotham-Medium', sans-serif;
-$font-secondary : 'Gotham-Book', sans-serif;
+$font-primary     : 'Gotham-Medium', sans-serif;
+$font-secondary   : 'Gotham-Book', sans-serif;
+$font-tertiary    : 'Gotham-Black', sans-serif;
+$font-quaternary  : 'Gotham-Bold', sans-serif;

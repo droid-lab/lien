@@ -28,9 +28,9 @@
 		@include responsive(s4) {
 			height: 60px;
 		}
-		#logo-hbs-cambio{
-			height: 51px;
-			margin-top: 10px;
+		#logo-lien-top{
+			height: 35px;
+			margin-top: 19px;
 			@include responsive(s1) {
 				height: 40px;
 				margin-top: 17px;
@@ -224,7 +224,7 @@
 						text-align: center;
 						font-weight: 500;
 						line-height: 40px;
-						font-size: 1.25em;
+						font-size: 1.18em;
 						padding-top: 16px;
 						-webkit-transition: background 0.3s, color 0.3s;
 						transition: background 0.3s, color 0.3s;
