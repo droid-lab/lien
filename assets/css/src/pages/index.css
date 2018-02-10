@@ -155,6 +155,14 @@ body {
     font-family: "Gotham-Black", sans-serif;
     color: #F94615; }
 
+.p-light {
+  position: relative;
+  float: left;
+  width: 100%;
+  font-family: "Gotham-Book", sans-serif;
+  color: #58585a;
+  font-size: 1em; }
+
 .title-cta {
   color: #FFF;
   font-size: 2.5em;
@@ -295,7 +303,7 @@ textarea {
   .owl-carousel .owl-dots .owl-dot.active span {
     background-color: #F94615 !important; }
 
-.default-section, .cta-default, #seja-um-franqueado, #sobre, #duvidas-frequentes, #glossario, #seguradoras-associadas, #contato, footer {
+.default-section, .cta-default, #seja-um-franqueado, #sobre, #duvidas-frequentes, #glossario, #glossario .box-relative, #seguradoras-associadas, #seguradoras-associadas .row-items .box-relative, #contato, footer {
   position: relative;
   float: left;
   width: 100%; }
@@ -421,16 +429,140 @@ textarea {
   margin-bottom: 2.14em; }
   #duvidas-frequentes .row-duvidas-frequentes .title-section:after {
     top: 2.4em; }
+  #duvidas-frequentes .row-duvidas-frequentes .p-light {
+    margin-bottom: 2em; }
+  #duvidas-frequentes .row-duvidas-frequentes h3 {
+    position: relative;
+    float: left;
+    width: 100%;
+    font-family: "Gotham-Bold", sans-serif;
+    font-size: 1.7em;
+    color: #F94615;
+    margin-bottom: 1.4em;
+    line-height: 1.4em;
+    margin-top: 0;
+    margin-bottom: 1.2em; }
+  #duvidas-frequentes .row-duvidas-frequentes .question {
+    position: relative;
+    float: left;
+    width: 100%;
+    font-family: "Gotham-Medium", sans-serif;
+    font-size: 1.5em;
+    color: #58585a;
+    margin-bottom: 1.4em;
+    line-height: 1.4em;
+    margin-left: 3em; }
+  #duvidas-frequentes .row-duvidas-frequentes .awnser {
+    position: relative;
+    float: left;
+    width: 100%;
+    font-family: "Gotham-Book", sans-serif;
+    font-size: 1.2em;
+    color: #58585a;
+    margin-bottom: 1.4em;
+    line-height: 1.4em;
+    margin-left: 6em; }
 
 #glossario {
   margin-top: 2.14em;
   margin-bottom: 2.14em; }
+  #glossario h3 {
+    color: #58585a;
+    font-family: "Gotham-Book", sans-serif;
+    font-size: 1.4em;
+    margin-bottom: 2em; }
+  #glossario h4 {
+    color: #F94615;
+    font-family: "Gotham-Book", sans-serif;
+    margin-bottom: 2em; }
+    #glossario h4 span {
+      font-family: "Gotham-Bold", sans-serif; }
+  #glossario .title-glossario {
+    color: #F94615;
+    font-family: "Gotham-Bold", sans-serif;
+    margin-bottom: 1em;
+    font-size: 1.5em; }
+  #glossario .description-glossario {
+    margin-left: 3em;
+    font-family: "Gotham-Book", sans-serif;
+    color: #58585a;
+    margin-bottom: 3em; }
+  #glossario .box-relative {
+    margin-bottom: 2em; }
+    #glossario .box-relative input {
+      background-color: #FFF;
+      border: 2px solid #58585a;
+      text-transform: uppercase; }
+      #glossario .box-relative input::-webkit-input-placeholder {
+        color: #F94615; }
+      #glossario .box-relative input::-moz-placeholder {
+        color: #F94615; }
+      #glossario .box-relative input:-ms-input-placeholder {
+        color: #F94615; }
+      #glossario .box-relative input:-moz-placeholder {
+        color: #F94615; }
+      #glossario .box-relative input:placeholder-shown {
+        color: #F94615; }
+    #glossario .box-relative button {
+      position: absolute;
+      height: 30px;
+      width: 30px;
+      border: none;
+      top: 1em;
+      right: 1.2em;
+      background-image: url("../../../images/lien-btn-filter.svg"); }
+  #glossario ul {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding: 0; }
+    #glossario ul li {
+      list-style-type: none;
+      color: #58585a;
+      font-size: 1.1em; }
 
 #seguradoras-associadas {
   margin-top: 2.14em;
   margin-bottom: 2.14em; }
   #seguradoras-associadas .row-seguradoras-associadas .title-section:after {
     top: 2.4em; }
+  #seguradoras-associadas .row-items .box-relative .item-img {
+    border: 1px solid #58585a;
+    width: 100%;
+    height: 160px; }
+  #seguradoras-associadas .row-items .box-relative h2 {
+    color: #58585a;
+    font-size: 2em;
+    font-family: "Gotham-Bold", sans-serif;
+    margin-bottom: 0.5em;
+    text-align: center; }
+  #seguradoras-associadas .row-items .box-relative p {
+    color: #F94615;
+    text-align: center; }
+  #seguradoras-associadas .row-items .box-relative button {
+    position: relative;
+    height: 2.5rem;
+    width: 10rem;
+    font-family: "Gotham-Book", sans-serif;
+    background-color: #F94615;
+    border: none;
+    color: #FFF;
+    padding: 0px;
+    border-radius: 40px;
+    font-size: 0.8rem;
+    left: 50%;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.25s ease-in-out 0s;
+    -moz-transform: all 0.25s ease-in-out 0s;
+    -ms-transition: all 0.25s ease-in-out 0s;
+    transition: all 0.25s ease-in-out 0s;
+    -webkit-transform: translatex(-5rem) !important;
+    -moz-transform: translatex(-5rem) !important;
+    -ms-transform: translatex(-5rem) !important;
+    transform: translatex(-5rem) !important;
+    margin-bottom: 3em; }
 
 #contato {
   background-color: #929294;
@@ -470,7 +602,6 @@ textarea {
       transition: all 0.25s ease-in-out 0s; }
   #contato #form-contact button {
     width: 15em;
-    border-radius: 0px;
     margin-top: 1em;
     margin-bottom: 3em;
     margin-left: 50%;
@@ -487,4 +618,18 @@ textarea {
       color: #FFF; }
 
 footer {
+  font-family: "Gotham-Book", sans-serif;
+  padding-top: 3em;
+  padding-bottom: 2em;
+  color: #FFF;
   background-color: #3B3B3B; }
+  footer p {
+    margin-bottom: 0.1em; }
+  footer .col-left img {
+    height: 50px;
+    margin-bottom: 1em; }
+  footer .col-right {
+    text-align: right; }
+    footer .col-right img {
+      height: 50px;
+      margin-bottom: 1em; }

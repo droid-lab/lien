@@ -164,6 +164,15 @@ body {
 	}
 }
 
+.p-light{
+	position: relative;
+	float: left;
+	width: 100%;
+	font-family: $font-secondary;
+	color: $color-dark-gray;
+	font-size: 1em;
+}
+
 .title-cta {
 	color: $color-white;
 	font-size: 2.5em;
@@ -452,6 +461,43 @@ textarea {
 				top: 2.4em;
 			}
 		}
+		.p-light{
+			margin-bottom: 2em;
+		}
+		h3{
+			position: relative;
+			float: left;
+			width: 100%;
+			font-family: $font-quaternary;
+			font-size: 1.7em;
+			color: $color-orange;
+			margin-bottom: 1.4em;
+			line-height: 1.4em;
+			margin-top: 0;
+			margin-bottom: 1.2em;
+		}
+		.question{
+			position: relative;
+			float: left;
+			width: 100%;
+			font-family: $font-primary;
+			font-size: 1.5em;
+			color: $color-dark-gray;
+			margin-bottom: 1.4em;
+			line-height: 1.4em;
+			margin-left: 3em;
+		}
+		.awnser {
+			position: relative;
+			float: left;
+			width: 100%;
+			font-family: $font-secondary;
+			font-size: 1.2em;
+			color: $color-dark-gray;
+			margin-bottom: 1.4em;
+			line-height: 1.4em;
+			margin-left: 6em;
+		}
 	}
 }
 
@@ -459,6 +505,63 @@ textarea {
 	@extend .default-section;
 	margin-top: 2.14em;
 	margin-bottom: 2.14em;
+	h3{
+		color: $color-dark-gray;
+		font-family: $font-secondary;
+		font-size: 1.4em;
+		margin-bottom: 2em;
+	}
+	h4{
+		color: $color-orange;
+		font-family: $font-secondary;
+		margin-bottom: 2em;
+		span{
+			font-family: $font-quaternary;
+		}
+	}
+	.title-glossario{
+		color: $color-orange;
+		font-family: $font-quaternary;
+		margin-bottom: 1em;
+		font-size: 1.5em;
+	}
+	.description-glossario{
+		margin-left: 3em;
+		font-family: $font-secondary;
+		color: $color-dark-gray;
+		margin-bottom: 3em;
+	}
+	.box-relative{
+		@extend .default-section;
+		margin-bottom: 2em;
+		input {
+			background-color: $color-white;
+			border: 2px solid $color-dark-gray;
+			@include placeholder($color-orange);
+			text-transform: uppercase;
+		}
+		button {
+			position: absolute;
+			height: 30px;
+			width: 30px;
+			border: none;
+			top: 1em;
+			right: 1.2em;
+			background-image: url('../../../images/lien-btn-filter.svg');
+		}
+	}
+	ul {
+		position: relative;
+		float: left;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		li {
+			list-style-type: none;
+			color: $color-dark-gray;
+			font-size: 1.1em;
+		}
+	}
 }
 
 #seguradoras-associadas {
@@ -469,6 +572,51 @@ textarea {
 		.title-section {
 			&:after {
 				top: 2.4em;
+			}
+		}
+	}
+	.row-items{
+		.box-relative{
+			@extend .default-section;
+			.item-img {
+				border: 1px solid $color-dark-gray;
+				width: 100%;
+				height: 160px;
+			}
+
+			h2 {
+				color: $color-dark-gray;
+				font-size: 2em;
+				font-family: $font-quaternary;
+				margin-bottom: 0.5em;
+				text-align: center;
+			}
+
+			p {
+				color: $color-orange;
+				text-align: center;
+			}
+
+			button {
+				position: relative;
+				height: 2.5rem;
+				width: 10rem;
+				font-family: $font-secondary;
+				background-color: $color-orange;
+				border: none;
+				color: $color-white;
+				padding: 0px;
+				border-radius: 40px;
+				font-size: 0.8rem;
+				left: 50%;
+				letter-spacing: 0.5px;
+				text-transform: uppercase;
+				@include transition(0.25s);
+				-webkit-transform: translatex(-5rem) !important;
+				-moz-transform: translatex(-5rem) !important;
+				-ms-transform: translatex(-5rem) !important;
+				transform: translatex(-5rem) !important;
+				margin-bottom: 3em;
 			}
 		}
 	}
@@ -520,7 +668,6 @@ textarea {
 		}
 		button{
 			width: 15em;
-			border-radius: 0px;
 			margin-top: 1em;
 			margin-bottom: 3em;
 			margin-left: 50%;
@@ -542,5 +689,25 @@ textarea {
 
 footer{
 	@extend .default-section;
+	font-family: $font-secondary;
+	padding-top: 3em;
+	padding-bottom: 2em;
+	color: $color-white;
 	background-color: $color-very-dark-gray;
+	p{
+		margin-bottom: 0.1em;
+	}
+	.col-left{
+		img {
+			height: 50px;
+			margin-bottom: 1em;
+		}
+	}
+	.col-right{
+		img{
+			height: 50px;
+			margin-bottom: 1em;
+		}
+		text-align: right;
+	}
 }

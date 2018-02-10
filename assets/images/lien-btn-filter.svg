@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="670 6009.829 21.667 21.659">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f94615;
+      }
+    </style>
+  </defs>
+  <g id="funnel" transform="translate(659 5998.829)">
+    <g id="Group_58" data-name="Group 58" transform="translate(10.999 11)">
+      <g id="Group_57" data-name="Group 57" transform="translate(0 0)">
+        <path id="Path_50" data-name="Path 50" class="cls-1" d="M18.992,31.759v-7.7L11.154,12.406A.9.9,0,0,1,11.9,11H31.758a.9.9,0,0,1,.747,1.406L24.668,24.054v4.783a.907.907,0,0,1-.358.721l-3.872,2.922A.9.9,0,0,1,18.992,31.759ZM13.6,12.8l7.046,10.472a.892.892,0,0,1,.155.5v6.171l2.069-1.56V23.78a.892.892,0,0,1,.155-.5L30.061,12.8H13.6Z" transform="translate(-10.999 -11)"/>
+      </g>
+    </g>
+  </g>
+</svg>
