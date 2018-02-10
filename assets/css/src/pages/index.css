@@ -63,18 +63,19 @@ body {
       transform: translatex(-6.42rem) !important; } }
 
 .lien-button-cta {
-  width: 20rem;
-  font-weight: 400;
-  font-size: 1.1rem;
+  width: 15rem;
+  font-weight: normal;
+  font-size: 1rem;
   margin-left: 50%;
+  height: 3.5em;
   color: #FFF !important;
   border-radius: 40px;
   text-transform: uppercase;
   background-color: #F94615 !important;
-  -webkit-transform: translatex(-10rem) !important;
-  -moz-transform: translatex(-10rem) !important;
-  -ms-transform: translatex(-10rem) !important;
-  transform: translatex(-10rem) !important; }
+  -webkit-transform: translatex(-7.5rem) !important;
+  -moz-transform: translatex(-7.5rem) !important;
+  -ms-transform: translatex(-7.5rem) !important;
+  transform: translatex(-7.5rem) !important; }
   .lien-button-cta:hover {
     background-color: transparent !important;
     color: #FFF !important;
@@ -97,10 +98,13 @@ body {
       background-position: center center !important; } }
 
 .title-big-white {
-  font-family: "Gotham-Bold", sans-serif;
+  font-family: "Gotham-Book", sans-serif;
   font-size: 3.2em;
-  color: #FFF; }
+  font-weight: normal;
+  color: #FFF;
+  line-height: 1.3em; }
   .title-big-white .extra-big {
+    font-family: "Gotham-Bold", sans-serif;
     font-size: 6rem; }
 
 .title-section {
@@ -116,7 +120,7 @@ body {
     content: '';
     position: absolute;
     bottom: 1em;
-    width: 1.85em;
+    width: 1.5em;
     height: 8px;
     background-color: #F94615;
     top: 1.3em;
@@ -170,8 +174,8 @@ body {
   float: left;
   text-align: center;
   width: 100%;
-  font-family: "Gotham-Bold", sans-serif;
-  font-weight: 700;
+  font-family: "Gotham-Book", sans-serif;
+  font-weight: normal;
   margin-bottom: 1.6em;
   margin-top: 1.5em;
   line-height: 1.5em; }
@@ -184,7 +188,7 @@ body {
     position: absolute;
     bottom: 1em;
     width: 1.8em;
-    height: 8px;
+    height: 4px;
     background-color: #FFF;
     top: 3.5em;
     float: left;
@@ -195,6 +199,7 @@ body {
       .title-cta:after {
         display: none !important; } }
   .title-cta .extra-big {
+    font-family: "Gotham-Bold", sans-serif;
     font-size: 4rem; }
 
 .sub-title-cta {
@@ -337,22 +342,25 @@ textarea {
     position: absolute;
     height: 15em;
     width: 7em;
-    left: 70.5%;
+    margin-left: -3.5em;
+    left: 70%;
     bottom: 4em;
     background-image: url("../../../images/lien-abf-top.svg");
     background-repeat: no-repeat; }
   #seja-um-franqueado .decoration {
     position: absolute;
-    height: 25em;
-    width: 25em;
-    left: 63%;
-    top: 25%;
     filter: alpha(opacity=0.9);
     -moz-opacity: 0.9;
     -khtml-opacity: 0.9;
     opacity: 0.9;
     background-image: url("../../../images/lien-logo-white.svg");
     background-repeat: no-repeat; }
+  #seja-um-franqueado .decoration-1 {
+    height: 25em;
+    width: 25em;
+    left: 70%;
+    margin-left: -12.5em;
+    top: 25%; }
   #seja-um-franqueado .decoration-2 {
     height: 60em;
     width: 60em;
@@ -474,7 +482,8 @@ textarea {
   #glossario h4 {
     color: #F94615;
     font-family: "Gotham-Book", sans-serif;
-    margin-bottom: 2em; }
+    margin-bottom: 2em;
+    font-weight: normal; }
     #glossario h4 span {
       font-family: "Gotham-Bold", sans-serif; }
   #glossario .title-glossario {
@@ -492,7 +501,8 @@ textarea {
     #glossario .box-relative input {
       background-color: #FFF;
       border: 2px solid #58585a;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      color: #F94615 !important; }
       #glossario .box-relative input::-webkit-input-placeholder {
         color: #F94615; }
       #glossario .box-relative input::-moz-placeholder {
@@ -505,12 +515,13 @@ textarea {
         color: #F94615; }
     #glossario .box-relative button {
       position: absolute;
-      height: 30px;
-      width: 30px;
+      height: 25px;
+      width: 25px;
       border: none;
-      top: 1em;
+      top: 1.3em;
       right: 1.2em;
-      background-image: url("../../../images/lien-btn-filter.svg"); }
+      background-image: url("../../../images/lien-btn-filter.svg");
+      background-color: transparent; }
   #glossario ul {
     position: relative;
     float: left;
@@ -563,6 +574,20 @@ textarea {
     -ms-transform: translatex(-5rem) !important;
     transform: translatex(-5rem) !important;
     margin-bottom: 3em; }
+  #seguradoras-associadas .owl-carousel .owl-dots {
+    margin-top: 1em !important;
+    margin-bottom: 2em;
+    position: absolute;
+    width: 100%; }
+    #seguradoras-associadas .owl-carousel .owl-dots .owl-dot span {
+      -webkit-transition: all 0.25s ease-in-out 0s;
+      -moz-transform: all 0.25s ease-in-out 0s;
+      -ms-transition: all 0.25s ease-in-out 0s;
+      transition: all 0.25s ease-in-out 0s; }
+    #seguradoras-associadas .owl-carousel .owl-dots .owl-dot:hover span {
+      background-color: #F94615 !important; }
+    #seguradoras-associadas .owl-carousel .owl-dots .owl-dot.active span {
+      background-color: #F94615 !important; }
 
 #contato {
   background-color: #929294;
@@ -593,7 +618,7 @@ textarea {
     font-size: 1.2rem; }
   #contato #form-contact input, #contato #form-contact textarea {
     background-color: #FFF;
-    color: #58585a; }
+    color: #58585a !important; }
     #contato #form-contact input:hover, #contato #form-contact input:focus, #contato #form-contact textarea:hover, #contato #form-contact textarea:focus {
       border-left: 4px solid #58585a;
       -webkit-transition: all 0.25s ease-in-out 0s;
