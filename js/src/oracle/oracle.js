@@ -191,7 +191,7 @@ Oracle = {
 		loaded : false,
 		config : {
 			delay    : 500,
-			recheck  : 1500,
+			recheck  : 5000,
 			velocity : "slow"
 		},
 		init: function(){

@@ -84,14 +84,14 @@ body {
       margin-bottom: 2rem;
       font-size: 1rem; } }
 
-.bgs, #home, #cta-1 {
+.bgs, #seja-um-franqueado, #cta-1, #cta-2, #cta-3 {
   position: relative;
   float: left;
   width: 100%;
   background-position: top center;
   background-size: cover; }
   @media only screen and (max-width: 992px) {
-    .bgs, #home, #cta-1 {
+    .bgs, #seja-um-franqueado, #cta-1, #cta-2, #cta-3 {
       background-attachment: scroll !important;
       background-repeat: no-repeat !important;
       background-position: center center !important; } }
@@ -218,28 +218,30 @@ body {
   float: left;
   width: 100%; }
 
-#form-work-here,
+.no-padding {
+  padding: 0px; }
+
+.padding-left {
+  padding-left: 15px; }
+
+#form-franqueado,
 #form-contact {
   position: relative;
   float: left;
   width: 100%; }
-
-label {
-  width: 100%;
-  font-family: "Gotham-Book", sans-serif;
-  font-size: 1.2rem;
-  font-weight: 400;
-  margin-bottom: 0.5em;
-  margin-top: 0.5em; }
 
 input,
 textarea {
   font-family: "Gotham-Book", sans-serif;
   font-size: 1.3rem !important;
   font-weight: 400;
-  border: 1px solid #000;
+  background-color: rgba(87, 52, 34, 0.6);
+  border: none;
   width: 100%;
+  border-radius: 0px;
+  color: #FFF !important;
   height: 60px;
+  border-left: 0px solid rgba(87, 52, 34, 0.8);
   padding: 0 1em;
   font-size: 1em;
   margin-bottom: 1em;
@@ -247,31 +249,59 @@ textarea {
   -moz-transform: all 0.25s ease-in-out 0s;
   -ms-transition: all 0.25s ease-in-out 0s;
   transition: all 0.25s ease-in-out 0s; }
-  input:focus,
-  textarea:focus {
-    border-left-width: 5px; }
   @media only screen and (max-width: 992px) {
     input,
     textarea {
       height: 50px; } }
+  input::-webkit-input-placeholder,
+  textarea::-webkit-input-placeholder {
+    color: #FFF; }
+  input::-moz-placeholder,
+  textarea::-moz-placeholder {
+    color: #FFF; }
+  input:-ms-input-placeholder,
+  textarea:-ms-input-placeholder {
+    color: #FFF; }
+  input:-moz-placeholder,
+  textarea:-moz-placeholder {
+    color: #FFF; }
+  input:placeholder-shown,
+  textarea:placeholder-shown {
+    color: #FFF; }
+  input:hover, input:focus,
+  textarea:hover,
+  textarea:focus {
+    border-left: 4px solid rgba(87, 52, 34, 0.8);
+    -webkit-transition: all 0.25s ease-in-out 0s;
+    -moz-transform: all 0.25s ease-in-out 0s;
+    -ms-transition: all 0.25s ease-in-out 0s;
+    transition: all 0.25s ease-in-out 0s; }
 
 textarea {
   height: 120px;
   padding-top: 1em;
   resize: none; }
 
-.default-section, #home, #sobre, #cta-1 {
+.default-section, #seja-um-franqueado, #sobre, #cta-1, #duvidas-frequentes, #cta-2, #glossario, #cta-3, #seguradoras-associadas, #contato, footer {
   position: relative;
   float: left;
   width: 100%; }
 
-#home {
+#seja-um-franqueado {
   background: linear-gradient(rgba(249, 70, 21, 0.4), rgba(249, 70, 21, 0.4)), url("../../../images/lien-bg-top.jpg");
   height: 100vh; }
   @media only screen and (max-width: 992px) {
-    #home {
+    #seja-um-franqueado {
       height: auto; } }
-  #home .decoration {
+  #seja-um-franqueado .abf {
+    position: absolute;
+    height: 15em;
+    width: 7em;
+    left: 70.5%;
+    bottom: 4em;
+    background-image: url("../../../images/lien-abf-top.svg");
+    background-repeat: no-repeat; }
+  #seja-um-franqueado .decoration {
     position: absolute;
     height: 25em;
     width: 25em;
@@ -283,7 +313,7 @@ textarea {
     opacity: 0.9;
     background-image: url("../../../images/lien-logo-white.svg");
     background-repeat: no-repeat; }
-  #home .decoration-2 {
+  #seja-um-franqueado .decoration-2 {
     height: 60em;
     width: 60em;
     top: 5%;
@@ -292,7 +322,7 @@ textarea {
     -moz-opacity: 0.1;
     -khtml-opacity: 0.1;
     opacity: 0.1; }
-  #home .decoration-3 {
+  #seja-um-franqueado .decoration-3 {
     height: 100em;
     width: 100em;
     top: -15%;
@@ -301,76 +331,65 @@ textarea {
     -moz-opacity: 0.03;
     -khtml-opacity: 0.03;
     opacity: 0.03; }
-  #home .row-home {
-    margin-top: 14.28em; }
+  #seja-um-franqueado .row-home {
+    margin-top: 12.28em; }
     @media only screen and (max-width: 992px) {
-      #home .row-home {
+      #seja-um-franqueado .row-home {
         margin-top: 7.14em; } }
-    #home .row-home h1 {
+    #seja-um-franqueado .row-home h1 {
       margin-bottom: 2.85rem; }
+      #seja-um-franqueado .row-home h1:after {
+        content: '';
+        position: absolute;
+        bottom: 1em;
+        height: 8px;
+        width: 2em;
+        background-color: #000000;
+        top: 3.8em;
+        float: left;
+        opacity: 0.31;
+        left: 17px; }
       @media only screen and (max-width: 992px) {
-        #home .row-home h1 {
+        #seja-um-franqueado .row-home h1 {
           margin-top: 2em; } }
-    #home .row-home p {
-      margin-bottom: 4rem; }
-    #home .row-home button {
-      margin-bottom: 2.85rem; }
+    #seja-um-franqueado .row-home p {
+      margin-top: 1em;
+      color: #FFF; }
+      #seja-um-franqueado .row-home p span {
+        color: #FFF; }
+    #seja-um-franqueado .row-home button {
+      left: 50%;
+      -webkit-transform: translatex(-12.5rem) !important;
+      -moz-transform: translatex(-12.5rem) !important;
+      -ms-transform: translatex(-12.5rem) !important;
+      transform: translatex(-12.5rem) !important;
+      margin-top: 2em;
+      margin-bottom: 2.85rem;
+      padding-left: 20px;
+      position: relative;
+      border: 1px solid #FFF; }
+      #seja-um-franqueado .row-home button:hover svg .cls-1 {
+        fill: #FFF; }
+      #seja-um-franqueado .row-home button svg {
+        -webkit-transition: all 0.25s ease-in-out 0s;
+        -moz-transform: all 0.25s ease-in-out 0s;
+        -ms-transition: all 0.25s ease-in-out 0s;
+        transition: all 0.25s ease-in-out 0s;
+        top: 18px;
+        position: absolute;
+        height: 30px;
+        left: 30px; }
 
 #sobre {
   margin-top: 2.14em;
   margin-bottom: 2.14em; }
-  #sobre .row-missao-visao-valores {
-    margin-top: 6.42em; }
-    #sobre .row-missao-visao-valores .col-missao-visao-valores {
-      border: 4px solid #ccc;
-      margin-left: 8px;
-      margin-right: 8px;
-      width: calc(33.333% - 16px); }
-      @media only screen and (max-width: 992px) {
-        #sobre .row-missao-visao-valores .col-missao-visao-valores {
-          width: calc(80% - 16px);
-          margin-bottom: 5.5em;
-          border-width: 2px;
-          margin-left: 10%;
-          margin-right: 10%; } }
-      @media only screen and (max-width: 768px) {
-        #sobre .row-missao-visao-valores .col-missao-visao-valores {
-          width: 90%;
-          margin-left: 5%;
-          margin-right: 5%; } }
-      #sobre .row-missao-visao-valores .col-missao-visao-valores img {
-        position: absolute;
-        top: -50px;
-        right: 15px;
-        height: 100px;
-        width: 100px; }
-        @media only screen and (max-width: 992px) {
-          #sobre .row-missao-visao-valores .col-missao-visao-valores img {
-            height: 60px;
-            width: 60px;
-            top: -30px; } }
-      #sobre .row-missao-visao-valores .col-missao-visao-valores h2 {
-        color: #F94615;
-        font-size: 2em;
-        position: relative;
-        float: left;
-        width: 100%;
-        font-family: "Gotham-Book", sans-serif;
-        font-weight: 700;
-        margin-bottom: 1.6em; }
-        @media only screen and (max-width: 992px) {
-          #sobre .row-missao-visao-valores .col-missao-visao-valores h2 {
-            text-align: center; } }
-      @media only screen and (max-width: 992px) {
-        #sobre .row-missao-visao-valores .col-missao-visao-valores p {
-          text-align: center; } }
 
 #cta-1 {
   margin-top: 4.2em;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../../images/lien-bg-cta-1.jpg");
   background-size: initial;
   background-position: center center;
-  height: 550px; }
+  height: 510px; }
   @media only screen and (max-width: 992px) {
     #cta-1 {
       height: auto; } }
@@ -381,3 +400,80 @@ textarea {
     #cta-1 .row-cta button:hover {
       background-color: transparent;
       color: #FFF; }
+
+#duvidas-frequentes {
+  margin-top: 2.14em;
+  margin-bottom: 2.14em; }
+  #duvidas-frequentes .row-duvidas-frequentes .title-section:after {
+    top: 2.4em; }
+
+#cta-2 {
+  margin-top: 4.2em;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../../images/lien-bg-cta-2.jpg");
+  background-size: initial;
+  background-position: top center;
+  height: 510px; }
+  @media only screen and (max-width: 992px) {
+    #cta-2 {
+      height: auto; } }
+  #cta-2 .row-cta button {
+    margin-top: 2.1em;
+    background-color: #FFF;
+    color: #000; }
+    #cta-2 .row-cta button:hover {
+      background-color: transparent;
+      color: #FFF; }
+
+#glossario {
+  margin-top: 2.14em;
+  margin-bottom: 2.14em; }
+
+#cta-3 {
+  margin-top: 4.2em;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../../images/lien-bg-cta-3.jpg");
+  background-size: initial;
+  background-position: center center;
+  height: 510px; }
+  @media only screen and (max-width: 992px) {
+    #cta-3 {
+      height: auto; } }
+  #cta-3 .row-cta button {
+    margin-top: 2.1em;
+    background-color: #FFF;
+    color: #000; }
+    #cta-3 .row-cta button:hover {
+      background-color: transparent;
+      color: #FFF; }
+
+#seguradoras-associadas {
+  margin-top: 2.14em;
+  margin-bottom: 2.14em; }
+  #seguradoras-associadas .row-seguradoras-associadas .title-section:after {
+    top: 2.4em; }
+
+#contato {
+  background-color: #929294;
+  margin-top: 2.14em;
+  margin-bottom: 0em; }
+  #contato .row-contato .title-section {
+    text-align: center;
+    color: #FFF; }
+    #contato .row-contato .title-section:after {
+      content: '';
+      position: absolute;
+      bottom: 1em;
+      width: 1.8em;
+      height: 8px;
+      background-color: #3B3B3B !important;
+      float: left;
+      left: 5px;
+      margin-left: 50%;
+      transform: translatex(-50%); }
+  #contato .row-contato .title-h2 {
+    text-align: center;
+    color: #FFF;
+    font-size: 1.4em;
+    font-family: "Gotham-Book", sans-serif; }
+
+footer {
+  background-color: #3B3B3B; }
