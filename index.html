@@ -29,26 +29,32 @@
 		<!-- Canonical -->
 		<link rel="canonical" href=""/>
 		<!-- FavIcon -->
-		<link href="./assets/images/hbs-cambio-favicon.png" rel="icon" type="image/x-icon"/>
+		<link href="./assets/images/lien-favicon.png" rel="icon" type="image/x-icon"/>
 		<!-- CSS -->
-		<link href="./assets/css/src/bootstrap/bootstrap.css" rel="stylesheet" type="text/css"/>
-		<link href="./assets/css/src/base/base.css"           rel="stylesheet" type="text/css"/>
-		<link href="./assets/css/src/pages/index.css"         rel="stylesheet" type="text/css"/>
+		<link href="./assets/css/src/bootstrap/bootstrap.css"                rel="stylesheet" type="text/css"/>
+		<link href="./assets/css/src/libs/owl.carousel/owl.carousel.min.css" rel="stylesheet" type="text/css"/>
+		<link href="./assets/css/src/libs/select2/select2.min.css"           rel="stylesheet" type="text/css"/>
+		<link href="./assets/css/src/base/base.css"                          rel="stylesheet" type="text/css"/>
+		<link href="./assets/css/src/pages/index.css"                        rel="stylesheet" type="text/css"/>
 	</head>
 	<body>
+		<!-- Preloader -->
 		<div id="preloader">
 			<div class="preloader-img">
 				<img src="assets/images/lien-preloader.svg" alt="Logo LIEN"/>
 			</div>
 		</div>
+		<!-- Menu -->
 		<nav id="header-menu">
 			<div class="container">
+				<!-- Logo -->
 				<header>
 					<div title="Menu" class="hamburguer visible-sm visible-xs">
 						<span></span>
 					</div>
 					<a href="#" class="a-header"><img id="logo-lien-top" src="./assets/images/lien-logo-top.svg" alt="Logo LIEN"></a>
 				</header>
+				<!-- Menu Desktop -->
 				<nav class="menu-desktop bg-transparent bg-shared hidden-sm hidden-xs visible-md visible-lg">
 					<div class="menu-container nav navbar-nav">
 						<ul>
@@ -73,6 +79,7 @@
 						</ul>
 					</div>
 				</nav>
+				<!-- Menu Mobile -->
 				<nav class="menu-mobile bg-transparent bg-shared visible-sm visible-xs hidden-md hidden-lg">
 					<div class="menu-container nav navbar-nav">
 						<ul>
@@ -100,6 +107,7 @@
 			</div>
 		</nav>
 		<main>
+			<!-- Seja um Franqueado -->
 			<section id="seja-um-franqueado" data-stellar-background-ratio="0.1">
 				<div class="decoration-1 decoration" data-stellar-ratio="2"></div>
 				<div class="decoration-2 decoration" data-stellar-ratio="0.5"></div>
@@ -132,6 +140,7 @@
 					</div>
 				</div>
 			</section>
+			<!-- Sobre -->
 			<section id="sobre">
 				<div class="container">
 					<div class="row row-sobre">
@@ -154,18 +163,38 @@
 					</div>
 				</div>
 			</section>
-			<section id="cta-1">
-				<div class="container">
-					<div class="row row-cta">
-						<div class="col-lg-12">
-							<h1 class="title-cta">Conheça as nossas opções de seguro <br/><span class="extra-big">Empresarial</span></h1>
-							<h2 class="sub-title-cta">A diferença de cotações entre bancos, corretoras e casas de câmbio pode chegar a 37%. A Câmbio Store reúne todas as opções
-								em um único lugar para facilitar a comparação dos valores e a troca de moeda estrangeira.</h2>
-							<button class="lien-button lien-button-cta">Fale Conosco</button>
+			<!-- CTA 1 -->
+			<section id="cta-1" class="cta-default">
+				<div class="container-fluid no-padding">
+					<div id="carousel-cta-1" class="owl-carousel owl-theme carousel-default">
+						<div class="item">
+							<div class="bg-cta" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),	url('./assets/images/lien-bg-cta-1.jpg');">
+								<div class="row row-cta">
+									<div class="col-lg-12">
+										<h1 class="title-cta">Conheça as nossas opções de seguro <br/><span class="extra-big">Empresarial</span></h1>
+										<h2 class="sub-title-cta">A diferença de cotações entre bancos, corretoras e casas de câmbio pode chegar a 37%. A Câmbio Store reúne todas as opções
+											em um único lugar para facilitar a comparação dos valores e a troca de moeda estrangeira.</h2>
+										<button class="lien-button lien-button-cta">Fale Conosco</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="bg-cta" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),	url('./assets/images/lien-bg-cta-2.jpg');">
+								<div class="row row-cta">
+									<div class="col-lg-12">
+										<h1 class="title-cta">Conheça as nossas opções de seguro <br/><span class="extra-big">Empresarial</span></h1>
+										<h2 class="sub-title-cta">A diferença de cotações entre bancos, corretoras e casas de câmbio pode chegar a 37%. A Câmbio Store reúne todas as opções
+											em um único lugar para facilitar a comparação dos valores e a troca de moeda estrangeira.</h2>
+										<button class="lien-button lien-button-cta">Fale Conosco</button>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
+			<!-- Dúvidas Frequentes -->
 			<section id="duvidas-frequentes">
 				<div class="container">
 					<div class="row row-duvidas-frequentes">
@@ -176,18 +205,38 @@
 					</div>
 				</div>
 			</section>
-			<section id="cta-2">
-				<div class="container">
-					<div class="row row-cta">
-						<div class="col-lg-12">
-							<h1 class="title-cta">Conheça as nossas opções de seguro <br/><span class="extra-big">Vida</span></h1>
-							<h2 class="sub-title-cta">A diferença de cotações entre bancos, corretoras e casas de câmbio pode chegar a 37%. A Câmbio Store reúne todas as opções
-								em um único lugar para facilitar a comparação dos valores e a troca de moeda estrangeira.</h2>
-							<button class="lien-button lien-button-cta">Fale Conosco</button>
+			<!-- CTA 2 -->
+			<section id="cta-2" class="cta-default">
+				<div class="container-fluid no-padding">
+					<div id="carousel-cta-1" class="owl-carousel owl-theme carousel-default">
+						<div class="item">
+							<div class="bg-cta" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/images/lien-bg-cta-1.jpg');">
+								<div class="row row-cta">
+									<div class="col-lg-12">
+										<h1 class="title-cta">Conheça as nossas opções de seguro <br/><span class="extra-big">Empresarial</span></h1>
+										<h2 class="sub-title-cta">A diferença de cotações entre bancos, corretoras e casas de câmbio pode chegar a 37%. A Câmbio Store reúne todas as opções
+											em um único lugar para facilitar a comparação dos valores e a troca de moeda estrangeira.</h2>
+										<button class="lien-button lien-button-cta">Fale Conosco</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="bg-cta" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),	url('./assets/images/lien-bg-cta-2.jpg');">
+								<div class="row row-cta">
+									<div class="col-lg-12">
+										<h1 class="title-cta">Conheça as nossas opções de seguro <br/><span class="extra-big">Empresarial</span></h1>
+										<h2 class="sub-title-cta">A diferença de cotações entre bancos, corretoras e casas de câmbio pode chegar a 37%. A Câmbio Store reúne todas as opções
+											em um único lugar para facilitar a comparação dos valores e a troca de moeda estrangeira.</h2>
+										<button class="lien-button lien-button-cta">Fale Conosco</button>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
+			<!-- Glossário -->
 			<section id="glossario">
 				<div class="container">
 					<div class="row row-glossario">
@@ -198,18 +247,38 @@
 					</div>
 				</div>
 			</section>
-			<section id="cta-3">
-				<div class="container">
-					<div class="row row-cta">
-						<div class="col-lg-12">
-							<h1 class="title-cta">Conheça as nossas opções de seguro <br/><span class="extra-big">Auto</span></h1>
-							<h2 class="sub-title-cta">A diferença de cotações entre bancos, corretoras e casas de câmbio pode chegar a 37%. A Câmbio Store reúne todas as opções
-								em um único lugar para facilitar a comparação dos valores e a troca de moeda estrangeira.</h2>
-							<button class="lien-button lien-button-cta">Fale Conosco</button>
+			<!-- CTA 3 -->
+			<section id="cta-3" class="cta-default">
+				<div class="container-fluid no-padding">
+					<div id="carousel-cta-1" class="owl-carousel owl-theme carousel-default">
+						<div class="item">
+							<div class="bg-cta" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/images/lien-bg-cta-2.jpg');">
+								<div class="row row-cta">
+									<div class="col-lg-12">
+										<h1 class="title-cta">Conheça as nossas opções de seguro <br/><span class="extra-big">Empresarial</span></h1>
+										<h2 class="sub-title-cta">A diferença de cotações entre bancos, corretoras e casas de câmbio pode chegar a 37%. A Câmbio Store reúne todas as opções
+											em um único lugar para facilitar a comparação dos valores e a troca de moeda estrangeira.</h2>
+										<button class="lien-button lien-button-cta">Fale Conosco</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="bg-cta" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),	url('./assets/images/lien-bg-cta-3.jpg');">
+								<div class="row row-cta">
+									<div class="col-lg-12">
+										<h1 class="title-cta">Conheça as nossas opções de seguro <br/><span class="extra-big">Empresarial</span></h1>
+										<h2 class="sub-title-cta">A diferença de cotações entre bancos, corretoras e casas de câmbio pode chegar a 37%. A Câmbio Store reúne todas as opções
+											em um único lugar para facilitar a comparação dos valores e a troca de moeda estrangeira.</h2>
+										<button class="lien-button lien-button-cta">Fale Conosco</button>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
+			<!-- Seguradoras Associadas -->
 			<section id="seguradoras-associadas">
 				<div class="container">
 					<div class="row row-seguradoras-associadas">
@@ -220,16 +289,39 @@
 					</div>
 				</div>
 			</section>
+			<!-- Contato -->
 			<section id="contato">
 				<div class="container">
 					<div class="row row-contato">
 						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 							<h1 class="title-section">Contato</h1>
 							<h2 class="title-h2">Entre em contato com a LIEN Corretora de Seguros <br/>Nós estamos prontos para lhe atender!</h2>
+							<form id="form-contact" data-validate="true">
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+									<label for="work-here-name">Nome</label>
+									<input type="text" id="work-here-name" data-required="true" class="input-hbs-cambio">
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+									<label for="work-here-email">Email</label>
+									<input type="text" id="work-here-email" data-email="true" class="input-hbs-cambio">
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+									<label for="work-here-phone">Telefone</label>
+									<input type="text" id="work-here-phone" data-required="true" data-inputmask="'mask': '(99) 9999-9999[9]'" class="input-hbs-cambio">
+								</div>
+								<div class="col-lg-12 generic-relative">
+									<label for="work-here-message">Mensagem</label>
+									<textarea id="work-here-message" data-required="true" class="input-hbs-cambio textarea-hbs-cambio"></textarea>
+								</div>
+								<div class="col-lg-12 generic-relative">
+									<button class="lien-button work-here-send">Enviar</button>
+								</div>
+							</form>
 						</div>
 					</div>
 				</div>
 			</section>
+			<!-- Rodapé -->
 			<footer>
 				<div class="container">
 					<div class="row">

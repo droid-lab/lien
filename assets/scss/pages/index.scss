@@ -38,7 +38,7 @@ body {
 	color: $color-black;
 	padding: 0px;
 	border-radius: 40px;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	letter-spacing: 0.5px;
 	text-transform: uppercase;
 	@include transition(0.25s);
@@ -99,7 +99,7 @@ body {
 
 // Default Styles
 .title-big-white {
-	font-family: $font-tertiary;
+	font-family: $font-quaternary;
 	font-size: 3.2em;
 	color: $color-white;
 	.extra-big{
@@ -113,8 +113,7 @@ body {
 	position: relative;
 	float: left;
 	width: 100%;
-	font-family: $font-tertiary;
-	font-weight: 700;
+	font-family: $font-quaternary;
 	margin-bottom: 0.8em;
 	margin-top: 1em;
 	&:after {
@@ -140,7 +139,7 @@ body {
 	position: relative;
 	float: left;
 	width: 100%;
-	font-family: $font-primary;
+	font-family: $font-quaternary;
 	font-size: 1.8em;
 	color: $color-orange;
 	margin-bottom: 1.4em;
@@ -175,7 +174,7 @@ body {
 	font-family: $font-quaternary;
 	font-weight: 700;
 	margin-bottom: 1.6em;
-	margin-top: 2em;
+	margin-top: 1.5em;
 	line-height: 1.5em;
 	@include responsive(s2) {
 		margin-bottom: 1em;
@@ -212,7 +211,7 @@ body {
 	margin-bottom: 1.2em;
 	line-height: 1.6em;
 	text-align: center;
-	padding: 0px 15%;
+	padding: 0px 30%;
 	@include responsive(s2) {
 		margin-bottom: 0.2em;
 		margin-top: 0.2em;
@@ -281,11 +280,60 @@ textarea {
 	resize: none;
 }
 
+// Carousels
+.owl-carousel{
+	.owl-dots{
+		margin-top: -3em!important;
+		position: absolute;
+		width: 100%;
+		.owl-dot{
+			span{
+				@include transition(0.25s);
+			}
+			&:hover {
+				span{
+					background-color: $color-orange !important;
+				}
+			}
+			&.active{
+				span {
+					background-color: $color-orange !important;
+				}
+			}
+		}
+	}
+}
+
 // Sections
 .default-section {
 	position: relative;
 	float: left;
 	width: 100%;
+}
+
+.cta-default {
+	@extend .default-section;
+	.bg-cta {
+		padding-top: 0.5em;
+		margin-top: 4.2em;
+		background-size: initial;
+		background-position: center center;
+	}
+	@include responsive(s2) {
+		height: auto;
+	}
+	.row-cta {
+		button {
+			margin-top: 2.1em;
+			margin-bottom: 5em;
+			background-color: $color-white;
+			color: $color-black;
+			&:hover {
+				background-color: transparent;
+				color: $color-white;
+			}
+		}
+	}
 }
 
 #seja-um-franqueado {
@@ -394,30 +442,6 @@ textarea {
 	margin-bottom: 2.14em;
 }
 
-#cta-1 {
-	@extend .default-section;
-	margin-top: 4.2em;
-	background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../../images/lien-bg-cta-1.jpg');
-	background-size: initial;
-	background-position: center center;
-	height: 510px;
-	@include responsive(s2) {
-		height: auto;
-	}
-	@extend .bgs;
-	.row-cta {
-		button {
-			margin-top: 2.1em;
-			background-color: $color-white;
-			color: $color-black;
-			&:hover {
-				background-color: transparent;
-				color: $color-white;
-			}
-		}
-	}
-}
-
 #duvidas-frequentes {
 	@extend .default-section;
 	margin-top: 2.14em;
@@ -431,58 +455,10 @@ textarea {
 	}
 }
 
-#cta-2 {
-	@extend .default-section;
-	margin-top: 4.2em;
-	background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../../images/lien-bg-cta-2.jpg');
-	background-size: initial;
-	background-position: top center;
-	height: 510px;
-	@include responsive(s2) {
-		height: auto;
-	}
-	@extend .bgs;
-	.row-cta {
-		button {
-			margin-top: 2.1em;
-			background-color: $color-white;
-			color: $color-black;
-			&:hover {
-				background-color: transparent;
-				color: $color-white;
-			}
-		}
-	}
-}
-
 #glossario {
 	@extend .default-section;
 	margin-top: 2.14em;
 	margin-bottom: 2.14em;
-}
-
-#cta-3 {
-	@extend .default-section;
-	margin-top: 4.2em;
-	background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../../images/lien-bg-cta-3.jpg');
-	background-size: initial;
-	background-position: center center;
-	height: 510px;
-	@include responsive(s2) {
-		height: auto;
-	}
-	@extend .bgs;
-	.row-cta {
-		button {
-			margin-top: 2.1em;
-			background-color: $color-white;
-			color: $color-black;
-			&:hover {
-				background-color: transparent;
-				color: $color-white;
-			}
-		}
-	}
 }
 
 #seguradoras-associadas {
@@ -525,6 +501,41 @@ textarea {
 			color: $color-white;
 			font-size: 1.4em;
 			font-family: $font-secondary;
+		}
+	}
+	#form-contact{
+		label{
+			color: $color-white;
+			font-family: $font-secondary;
+			font-size: 1.2rem;
+		}
+		input, textarea{
+			background-color: $color-white;
+			color: $color-dark-gray;
+			&:hover,
+			&:focus {
+				border-left: 4px solid $color-dark-gray;
+				@include transition(0.25s);
+			}
+		}
+		button{
+			width: 15em;
+			border-radius: 0px;
+			margin-top: 1em;
+			margin-bottom: 3em;
+			margin-left: 50%;
+			-webkit-transform: translatex(-7.5rem) !important;
+			-moz-transform: translatex(-7.5em) !important;
+			-ms-transform: translatex(-7.5em) !important;
+			transform: translatex(-7.5em) !important;
+			background-color: $color-very-dark-gray;
+			color: $color-white;
+			border: 1px solid $color-very-dark-gray;
+			&:hover{
+				background-color: $color-orange;
+				border: 1px solid $color-orange;
+				color: $color-white;
+			}
 		}
 	}
 }

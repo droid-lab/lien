@@ -40,7 +40,7 @@ body {
   color: #000;
   padding: 0px;
   border-radius: 40px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   letter-spacing: 0.5px;
   text-transform: uppercase;
   -webkit-transition: all 0.25s ease-in-out 0s;
@@ -84,20 +84,20 @@ body {
       margin-bottom: 2rem;
       font-size: 1rem; } }
 
-.bgs, #seja-um-franqueado, #cta-1, #cta-2, #cta-3 {
+.bgs, #seja-um-franqueado {
   position: relative;
   float: left;
   width: 100%;
   background-position: top center;
   background-size: cover; }
   @media only screen and (max-width: 992px) {
-    .bgs, #seja-um-franqueado, #cta-1, #cta-2, #cta-3 {
+    .bgs, #seja-um-franqueado {
       background-attachment: scroll !important;
       background-repeat: no-repeat !important;
       background-position: center center !important; } }
 
 .title-big-white {
-  font-family: "Gotham-Black", sans-serif;
+  font-family: "Gotham-Bold", sans-serif;
   font-size: 3.2em;
   color: #FFF; }
   .title-big-white .extra-big {
@@ -109,8 +109,7 @@ body {
   position: relative;
   float: left;
   width: 100%;
-  font-family: "Gotham-Black", sans-serif;
-  font-weight: 700;
+  font-family: "Gotham-Bold", sans-serif;
   margin-bottom: 0.8em;
   margin-top: 1em; }
   .title-section:after {
@@ -134,7 +133,7 @@ body {
   position: relative;
   float: left;
   width: 100%;
-  font-family: "Gotham-Medium", sans-serif;
+  font-family: "Gotham-Bold", sans-serif;
   font-size: 1.8em;
   color: #F94615;
   margin-bottom: 1.4em;
@@ -166,7 +165,7 @@ body {
   font-family: "Gotham-Bold", sans-serif;
   font-weight: 700;
   margin-bottom: 1.6em;
-  margin-top: 2em;
+  margin-top: 1.5em;
   line-height: 1.5em; }
   @media only screen and (max-width: 992px) {
     .title-cta {
@@ -200,7 +199,7 @@ body {
   margin-bottom: 1.2em;
   line-height: 1.6em;
   text-align: center;
-  padding: 0px 15%; }
+  padding: 0px 30%; }
   @media only screen and (max-width: 992px) {
     .sub-title-cta {
       margin-bottom: 0.2em;
@@ -282,10 +281,43 @@ textarea {
   padding-top: 1em;
   resize: none; }
 
-.default-section, #seja-um-franqueado, #sobre, #cta-1, #duvidas-frequentes, #cta-2, #glossario, #cta-3, #seguradoras-associadas, #contato, footer {
+.owl-carousel .owl-dots {
+  margin-top: -3em !important;
+  position: absolute;
+  width: 100%; }
+  .owl-carousel .owl-dots .owl-dot span {
+    -webkit-transition: all 0.25s ease-in-out 0s;
+    -moz-transform: all 0.25s ease-in-out 0s;
+    -ms-transition: all 0.25s ease-in-out 0s;
+    transition: all 0.25s ease-in-out 0s; }
+  .owl-carousel .owl-dots .owl-dot:hover span {
+    background-color: #F94615 !important; }
+  .owl-carousel .owl-dots .owl-dot.active span {
+    background-color: #F94615 !important; }
+
+.default-section, .cta-default, #seja-um-franqueado, #sobre, #duvidas-frequentes, #glossario, #seguradoras-associadas, #contato, footer {
   position: relative;
   float: left;
   width: 100%; }
+
+.cta-default .bg-cta {
+  padding-top: 0.5em;
+  margin-top: 4.2em;
+  background-size: initial;
+  background-position: center center; }
+
+@media only screen and (max-width: 992px) {
+  .cta-default {
+    height: auto; } }
+
+.cta-default .row-cta button {
+  margin-top: 2.1em;
+  margin-bottom: 5em;
+  background-color: #FFF;
+  color: #000; }
+  .cta-default .row-cta button:hover {
+    background-color: transparent;
+    color: #FFF; }
 
 #seja-um-franqueado {
   background: linear-gradient(rgba(249, 70, 21, 0.4), rgba(249, 70, 21, 0.4)), url("../../../images/lien-bg-top.jpg");
@@ -384,66 +416,15 @@ textarea {
   margin-top: 2.14em;
   margin-bottom: 2.14em; }
 
-#cta-1 {
-  margin-top: 4.2em;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../../images/lien-bg-cta-1.jpg");
-  background-size: initial;
-  background-position: center center;
-  height: 510px; }
-  @media only screen and (max-width: 992px) {
-    #cta-1 {
-      height: auto; } }
-  #cta-1 .row-cta button {
-    margin-top: 2.1em;
-    background-color: #FFF;
-    color: #000; }
-    #cta-1 .row-cta button:hover {
-      background-color: transparent;
-      color: #FFF; }
-
 #duvidas-frequentes {
   margin-top: 2.14em;
   margin-bottom: 2.14em; }
   #duvidas-frequentes .row-duvidas-frequentes .title-section:after {
     top: 2.4em; }
 
-#cta-2 {
-  margin-top: 4.2em;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../../images/lien-bg-cta-2.jpg");
-  background-size: initial;
-  background-position: top center;
-  height: 510px; }
-  @media only screen and (max-width: 992px) {
-    #cta-2 {
-      height: auto; } }
-  #cta-2 .row-cta button {
-    margin-top: 2.1em;
-    background-color: #FFF;
-    color: #000; }
-    #cta-2 .row-cta button:hover {
-      background-color: transparent;
-      color: #FFF; }
-
 #glossario {
   margin-top: 2.14em;
   margin-bottom: 2.14em; }
-
-#cta-3 {
-  margin-top: 4.2em;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../../images/lien-bg-cta-3.jpg");
-  background-size: initial;
-  background-position: center center;
-  height: 510px; }
-  @media only screen and (max-width: 992px) {
-    #cta-3 {
-      height: auto; } }
-  #cta-3 .row-cta button {
-    margin-top: 2.1em;
-    background-color: #FFF;
-    color: #000; }
-    #cta-3 .row-cta button:hover {
-      background-color: transparent;
-      color: #FFF; }
 
 #seguradoras-associadas {
   margin-top: 2.14em;
@@ -474,6 +455,36 @@ textarea {
     color: #FFF;
     font-size: 1.4em;
     font-family: "Gotham-Book", sans-serif; }
+  #contato #form-contact label {
+    color: #FFF;
+    font-family: "Gotham-Book", sans-serif;
+    font-size: 1.2rem; }
+  #contato #form-contact input, #contato #form-contact textarea {
+    background-color: #FFF;
+    color: #58585a; }
+    #contato #form-contact input:hover, #contato #form-contact input:focus, #contato #form-contact textarea:hover, #contato #form-contact textarea:focus {
+      border-left: 4px solid #58585a;
+      -webkit-transition: all 0.25s ease-in-out 0s;
+      -moz-transform: all 0.25s ease-in-out 0s;
+      -ms-transition: all 0.25s ease-in-out 0s;
+      transition: all 0.25s ease-in-out 0s; }
+  #contato #form-contact button {
+    width: 15em;
+    border-radius: 0px;
+    margin-top: 1em;
+    margin-bottom: 3em;
+    margin-left: 50%;
+    -webkit-transform: translatex(-7.5rem) !important;
+    -moz-transform: translatex(-7.5em) !important;
+    -ms-transform: translatex(-7.5em) !important;
+    transform: translatex(-7.5em) !important;
+    background-color: #3B3B3B;
+    color: #FFF;
+    border: 1px solid #3B3B3B; }
+    #contato #form-contact button:hover {
+      background-color: #F94615;
+      border: 1px solid #F94615;
+      color: #FFF; }
 
 footer {
   background-color: #3B3B3B; }
