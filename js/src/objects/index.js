@@ -49,7 +49,7 @@ Index = {
 		go: function(){
 			var scroller  = $(document).scrollTop();
 			var offset    = $(window).height() * 1/6;
-			var offsetImg = $(".bg-img").height() - ($(window).height() - 200);
+			var offsetImg = $("#seja-um-franqueado").height() - ($(window).height() - 200);
             if (scroller - Index.Menu.config.senseSpeed >  Index.Menu.config.previousScroll && scroller > offset){
             	$('#header-menu').addClass('off');
             	$('#header-menu').removeClass('on');
@@ -85,8 +85,10 @@ Index = {
                 $("html, body").stop().animate({
                     scrollTop: $(o.attr("href")).offset().top - plus
                 }, 1e3, "easeOutQuart", function(){
-					$('#header-menu').addClass('off');
-					$('#header-menu').removeClass('on');
+					if (o.attr("href") !== '#seja-um-franqueado'){
+						$('#header-menu').addClass('off');
+						$('#header-menu').removeClass('on');
+					}
                 });
             })
         }
@@ -111,8 +113,7 @@ Index = {
 				autoplay           : true,
 				autoplayTimeout    : 3000,
 				autoplayHoverPause : true,
-				singleItem         : true,
-				navText            : ["<i class='nav-left'></i>", "<i class='nav-right'></i>"]
+				singleItem         : true
 			}
 		},
 		init: function () {
@@ -121,12 +122,80 @@ Index = {
 				$('.carousel-default').trigger('stop.owl.autoplay');
 				$('.carousel-default').trigger('play.owl.autoplay', [3000]);
 			});
+			$('#carousel-seguradoras-associadas').owlCarousel({
+				loop: true,
+				nav: true,
+				pagination: true,
+				items: 1,
+				dots: true,
+				autoplay: true,
+				autoplayTimeout: 3000,
+				autoplayHoverPause: true,
+				singleItem: true,
+				navText: ["<i class='arrow-prev'></i>","<i class='arrow-next'></i>"]
+			});
+			$('#carousel-seguradoras-associadas').on('mouseout', function () {
+				$('#carousel-seguradoras-associadas').trigger('stop.owl.autoplay');
+				$('#carousel-seguradoras-associadas').trigger('play.owl.autoplay', [3000]);
+			});
+
+		}
+	},
+	ScrollReveal: {
+		configs: {
+			animationSet1: {
+				duration : 600,
+				origin   : 'left',
+				reset    : true,
+				delay    : 100,
+				scale    : 0
+			},
+			animationSet2: {
+				duration : 600,
+				origin   : 'top',
+				reset    : true,
+				delay    : 100,
+				scale    : 0
+			},
+			animationSet3: {
+				duration : 600,
+				origin   : 'bottom',
+				reset    : true,
+				delay    : 800,
+				scale    : 0
+			}
+		},
+		init: function(){
+			window.sr = ScrollReveal();
+			sr.reveal('.animation-1', Index.ScrollReveal.configs.animationSet1);
+			sr.reveal('.animation-2', Index.ScrollReveal.configs.animationSet2, 100);
+			sr.reveal('.animation-3', Index.ScrollReveal.configs.animationSet3);
+		}
+	},
+	InputMask: {
+		init: function(){
+			$(".mask").inputmask();
+		}
+	},
+	Select2: {
+		init: function(){
+			$("#state").select2({
+				minimumResultsForSearch: -1,
+				width: "100%"
+			})
+			$("#city").select2({
+				minimumResultsForSearch: -1,
+				width: "100%"
+			})
 		}
 	},
     init: function(){
     	Index.Menu.init();
 		Index.Stellar.init();
 		Index.Carousels.init();
+		Index.ScrollReveal.init();
+		Index.InputMask.init();
+		Index.Select2.init();
     }
 }
 

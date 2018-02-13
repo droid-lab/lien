@@ -69,7 +69,7 @@ body {
   margin-left: 50%;
   height: 3.5em;
   color: #FFF !important;
-  border-radius: 40px;
+  border-radius: 2.8em;
   text-transform: uppercase;
   background-color: #F94615 !important;
   -webkit-transform: translatex(-7.5rem) !important;
@@ -236,14 +236,8 @@ body {
 .padding-left {
   padding-left: 15px; }
 
-#form-franqueado,
-#form-contact {
-  position: relative;
-  float: left;
-  width: 100%; }
-
-input,
-textarea {
+.default-input, input,
+textarea, .select2-container .select2-selection--single {
   font-family: "Gotham-Book", sans-serif;
   font-size: 1.3rem !important;
   font-weight: 400;
@@ -262,32 +256,38 @@ textarea {
   -ms-transition: all 0.25s ease-in-out 0s;
   transition: all 0.25s ease-in-out 0s; }
   @media only screen and (max-width: 992px) {
-    input,
-    textarea {
+    .default-input, input,
+    textarea, .select2-container .select2-selection--single {
       height: 50px; } }
-  input::-webkit-input-placeholder,
-  textarea::-webkit-input-placeholder {
+  .default-input::-webkit-input-placeholder, input::-webkit-input-placeholder,
+  textarea::-webkit-input-placeholder, .select2-container .select2-selection--single::-webkit-input-placeholder {
     color: #FFF; }
-  input::-moz-placeholder,
-  textarea::-moz-placeholder {
+  .default-input::-moz-placeholder, input::-moz-placeholder,
+  textarea::-moz-placeholder, .select2-container .select2-selection--single::-moz-placeholder {
     color: #FFF; }
-  input:-ms-input-placeholder,
-  textarea:-ms-input-placeholder {
+  .default-input:-ms-input-placeholder, input:-ms-input-placeholder,
+  textarea:-ms-input-placeholder, .select2-container .select2-selection--single:-ms-input-placeholder {
     color: #FFF; }
-  input:-moz-placeholder,
-  textarea:-moz-placeholder {
+  .default-input:-moz-placeholder, input:-moz-placeholder,
+  textarea:-moz-placeholder, .select2-container .select2-selection--single:-moz-placeholder {
     color: #FFF; }
-  input:placeholder-shown,
-  textarea:placeholder-shown {
+  .default-input:placeholder-shown, input:placeholder-shown,
+  textarea:placeholder-shown, .select2-container .select2-selection--single:placeholder-shown {
     color: #FFF; }
-  input:hover, input:focus,
-  textarea:hover,
-  textarea:focus {
+  .default-input:hover, input:hover,
+  textarea:hover, .select2-container .select2-selection--single:hover, .default-input:focus, input:focus,
+  textarea:focus, .select2-container .select2-selection--single:focus {
     border-left: 4px solid rgba(87, 52, 34, 0.8);
     -webkit-transition: all 0.25s ease-in-out 0s;
     -moz-transform: all 0.25s ease-in-out 0s;
     -ms-transition: all 0.25s ease-in-out 0s;
     transition: all 0.25s ease-in-out 0s; }
+
+#form-franqueado,
+#form-contact {
+  position: relative;
+  float: left;
+  width: 100%; }
 
 textarea {
   height: 120px;
@@ -308,7 +308,33 @@ textarea {
   .owl-carousel .owl-dots .owl-dot.active span {
     background-color: #F94615 !important; }
 
-.default-section, .cta-default, #seja-um-franqueado, #sobre, #duvidas-frequentes, #glossario, #glossario .box-relative, #seguradoras-associadas, #seguradoras-associadas .row-items .box-relative, #contato, footer {
+.select2-container .select2-results__option--highlighted[aria-selected] {
+  background-color: #F94615;
+  color: white; }
+
+.select2-container.select2-container--open .select2-dropdown {
+  margin-top: -18px;
+  border: none;
+  border-radius: 0px; }
+
+.select2-container.select2-container--open .select2-selection--single .select2-selection__arrow {
+  height: 60px;
+  width: 30px; }
+  .select2-container.select2-container--open .select2-selection--single .select2-selection__arrow b {
+    border-color: transparent transparent #FFF transparent; }
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+  line-height: 60px !important;
+  padding: 0px;
+  color: #FFF; }
+
+.select2-container .select2-selection--single .select2-selection__arrow {
+  height: 60px;
+  width: 30px; }
+  .select2-container .select2-selection--single .select2-selection__arrow b {
+    border-color: #FFF transparent transparent transparent; }
+
+.default-section, .cta-default, #seja-um-franqueado, #seja-um-franqueado .row-home .box-relative, #sobre, #duvidas-frequentes, #glossario, #glossario .box-relative, #seguradoras-associadas, #seguradoras-associadas .row-items .box-relative, #contato, footer {
   position: relative;
   float: left;
   width: 100%; }
@@ -347,6 +373,9 @@ textarea {
     bottom: 4em;
     background-image: url("../../../images/lien-abf-top.svg");
     background-repeat: no-repeat; }
+    @media only screen and (max-width: 992px) {
+      #seja-um-franqueado .abf {
+        display: none; } }
   #seja-um-franqueado .decoration {
     position: absolute;
     filter: alpha(opacity=0.9);
@@ -355,6 +384,9 @@ textarea {
     opacity: 0.9;
     background-image: url("../../../images/lien-logo-white.svg");
     background-repeat: no-repeat; }
+    @media only screen and (max-width: 992px) {
+      #seja-um-franqueado .decoration {
+        display: none; } }
   #seja-um-franqueado .decoration-1 {
     height: 25em;
     width: 25em;
@@ -500,9 +532,13 @@ textarea {
     margin-bottom: 2em; }
     #glossario .box-relative input {
       background-color: #FFF;
-      border: 2px solid #58585a;
+      border: 1px solid #58585a;
       text-transform: uppercase;
-      color: #F94615 !important; }
+      color: #F94615 !important;
+      -webkit-transition: all 0.25s ease-in-out 0s;
+      -moz-transform: all 0.25s ease-in-out 0s;
+      -ms-transition: all 0.25s ease-in-out 0s;
+      transition: all 0.25s ease-in-out 0s; }
       #glossario .box-relative input::-webkit-input-placeholder {
         color: #F94615; }
       #glossario .box-relative input::-moz-placeholder {
@@ -513,6 +549,12 @@ textarea {
         color: #F94615; }
       #glossario .box-relative input:placeholder-shown {
         color: #F94615; }
+      #glossario .box-relative input:hover, #glossario .box-relative input:focus {
+        border-left: 4px solid #58585a;
+        -webkit-transition: all 0.25s ease-in-out 0s;
+        -moz-transform: all 0.25s ease-in-out 0s;
+        -ms-transition: all 0.25s ease-in-out 0s;
+        transition: all 0.25s ease-in-out 0s; }
     #glossario .box-relative button {
       position: absolute;
       height: 25px;
@@ -573,7 +615,9 @@ textarea {
     -moz-transform: translatex(-5rem) !important;
     -ms-transform: translatex(-5rem) !important;
     transform: translatex(-5rem) !important;
-    margin-bottom: 3em; }
+    margin-bottom: 4em; }
+    #seguradoras-associadas .row-items .box-relative button:hover {
+      background-color: #58585a; }
   #seguradoras-associadas .owl-carousel .owl-dots {
     margin-top: 1em !important;
     margin-bottom: 2em;
@@ -588,6 +632,62 @@ textarea {
       background-color: #F94615 !important; }
     #seguradoras-associadas .owl-carousel .owl-dots .owl-dot.active span {
       background-color: #F94615 !important; }
+  #seguradoras-associadas #carousel-seguradoras-associadas .owl-nav {
+    position: absolute;
+    top: calc(50% - 81px);
+    margin: 0px;
+    width: 100%;
+    z-index: -1; }
+    #seguradoras-associadas #carousel-seguradoras-associadas .owl-nav .owl-prev {
+      background: none;
+      padding: 0px;
+      border-radius: 0px;
+      float: left; }
+      #seguradoras-associadas #carousel-seguradoras-associadas .owl-nav .owl-prev:hover {
+        background-color: transparent; }
+      #seguradoras-associadas #carousel-seguradoras-associadas .owl-nav .owl-prev .arrow-prev {
+        height: 50px;
+        width: 50px;
+        position: relative;
+        float: left;
+        background-image: url("../../../images/lien-arrow-prev.svg");
+        margin-left: -61px;
+        -webkit-transition: all 0.15s ease-in-out 0s;
+        -moz-transform: all 0.15s ease-in-out 0s;
+        -ms-transition: all 0.15s ease-in-out 0s;
+        transition: all 0.15s ease-in-out 0s; }
+        @media only screen and (max-width: 992px) {
+          #seguradoras-associadas #carousel-seguradoras-associadas .owl-nav .owl-prev .arrow-prev {
+            margin-right: 0px; } }
+        #seguradoras-associadas #carousel-seguradoras-associadas .owl-nav .owl-prev .arrow-prev:hover {
+          -webkit-transform: scale(0.9);
+          -ms-transform: scale(0.9);
+          transform: scale(0.9); }
+    #seguradoras-associadas #carousel-seguradoras-associadas .owl-nav .owl-next {
+      background: none;
+      padding: 0px;
+      border-radius: 0px;
+      float: right; }
+      #seguradoras-associadas #carousel-seguradoras-associadas .owl-nav .owl-next:hover {
+        background-color: transparent; }
+      #seguradoras-associadas #carousel-seguradoras-associadas .owl-nav .owl-next .arrow-next {
+        height: 50px;
+        width: 50px;
+        position: relative;
+        float: left;
+        background-image: url("../../../images/lien-arrow-next.svg");
+        margin-right: -180px;
+        -webkit-transition: all 0.15s ease-in-out 0s;
+        -moz-transform: all 0.15s ease-in-out 0s;
+        -ms-transition: all 0.15s ease-in-out 0s;
+        transition: all 0.15s ease-in-out 0s; }
+        @media only screen and (max-width: 992px) {
+          #seguradoras-associadas #carousel-seguradoras-associadas .owl-nav .owl-next .arrow-next {
+            margin-right: 0px; } }
+        #seguradoras-associadas #carousel-seguradoras-associadas .owl-nav .owl-next .arrow-next:hover {
+          -webkit-transform: scale(0.9);
+          -ms-transform: scale(0.9);
+          transform: scale(0.9); }
 
 #contato {
   background-color: #929294;

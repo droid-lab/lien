@@ -61,8 +61,8 @@
     right: 15px;
     height: 40px;
     background: transparent;
-    border-radius: 0;
-    border: 2px solid #58585a;
+    border-radius: 50%;
+    border: 2px solid #F94615;
     display: block;
     cursor: pointer; }
     @media only screen and (max-width: 480px) {

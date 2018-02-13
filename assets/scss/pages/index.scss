@@ -66,7 +66,7 @@ body {
 	margin-left: 50%;
 	height: 3.5em;
 	color: $color-white !important;
-	border-radius: 40px;
+	border-radius: 2.8em;
 	text-transform: uppercase;
 	background-color: $color-orange !important;
 	-webkit-transform: translatex(-7.5rem) !important;
@@ -255,23 +255,16 @@ body {
 }
 
 // Forms
-#form-franqueado,
-#form-contact {
-	position: relative;
-	float: left;
-	width: 100%;
-}
 
-input,
-textarea {
+.default-input{
 	font-family: $font-secondary;
 	font-size: 1.3rem !important;
 	font-weight: 400;
-	background-color: rgba(87,52,34,0.6);
+	background-color: rgba(87, 52, 34, 0.6);
 	border: none;
 	width: 100%;
 	border-radius: 0px;
-	color: $color-white!important;
+	color: $color-white !important;
 	height: 60px;
 	border-left: 0px solid rgba(87, 52, 34, 0.8);
 	padding: 0 1em;
@@ -282,10 +275,23 @@ textarea {
 		height: 50px;
 	}
 	@include placeholder($color-white);
-	&:hover, &:focus{
+	&:hover,
+	&:focus {
 		border-left: 4px solid rgba(87, 52, 34, 0.8);
 		@include transition(0.25s);
 	}
+}
+
+#form-franqueado,
+#form-contact {
+	position: relative;
+	float: left;
+	width: 100%;
+}
+
+input,
+textarea {
+	@extend .default-input;
 }
 
 textarea {
@@ -313,6 +319,45 @@ textarea {
 				span {
 					background-color: $color-orange !important;
 				}
+			}
+		}
+	}
+}
+
+// Select2
+.select2-container{
+	.select2-results__option--highlighted[aria-selected] {
+		background-color: $color-orange;
+		color: white;
+	}
+	&.select2-container--open{
+		.select2-dropdown{
+			margin-top: -18px;
+			border: none;
+			border-radius:0px;
+		}
+		.select2-selection--single{
+			.select2-selection__arrow {
+				height: 60px;
+				width: 30px;
+				b {
+					border-color: transparent transparent $color-white transparent;
+				}
+			}
+		}
+	}
+	.select2-selection--single{
+		@extend .default-input;
+		.select2-selection__rendered {
+			line-height: 60px!important;
+			padding: 0px;
+			color: $color-white;
+		}
+		.select2-selection__arrow{
+			height: 60px;
+			width: 30px;
+			b{
+				border-color: $color-white transparent transparent transparent;
 			}
 		}
 	}
@@ -367,12 +412,18 @@ textarea {
 		bottom: 4em;
 		background-image: url('../../../images/lien-abf-top.svg');
 		background-repeat: no-repeat;
+		@include responsive(s2) {
+			display: none;
+		}
 	}
 	.decoration {
 		position: absolute;
 		@include opacity(0.9);
 		background-image: url('../../../images/lien-logo-white.svg');
 		background-repeat: no-repeat;
+		@include responsive(s2){
+			display:none;
+		}
 	}
 	.decoration-1{
 		height: 25em;
@@ -450,6 +501,9 @@ textarea {
 				height: 30px;
 				left: 30px;
 			}
+		}
+		.box-relative{
+			@extend .default-section;
 		}
 	}
 }
@@ -546,10 +600,16 @@ textarea {
 		margin-bottom: 2em;
 		input {
 			background-color: $color-white;
-			border: 2px solid $color-dark-gray;
+			border: 1px solid $color-dark-gray;
 			@include placeholder($color-orange);
 			text-transform: uppercase;
 			color: $color-orange!important;
+			@include transition(0.25s);
+			&:hover,
+			&:focus {
+				border-left: 4px solid rgba(88, 88, 90, 1);
+				@include transition(0.25s);
+			}
 		}
 		button {
 			position: absolute;
@@ -625,7 +685,10 @@ textarea {
 				-moz-transform: translatex(-5rem) !important;
 				-ms-transform: translatex(-5rem) !important;
 				transform: translatex(-5rem) !important;
-				margin-bottom: 3em;
+				margin-bottom: 4em;
+				&:hover{
+					background-color: $color-dark-gray;
+				}
 			}
 		}
 	}
@@ -647,6 +710,63 @@ textarea {
 				&.active {
 					span {
 						background-color: $color-orange !important;
+					}
+				}
+			}
+		}
+	}
+	#carousel-seguradoras-associadas {
+		.owl-nav {
+			position: absolute;
+			top: calc(50% - 81px);
+			margin: 0px;
+			width: 100%;
+			z-index: -1;
+			.owl-prev {
+				background: none;
+				padding: 0px;
+				border-radius: 0px;
+				float: left;
+				&:hover {
+					background-color: transparent;
+				}
+				.arrow-prev {
+					height: 50px;
+					width: 50px;
+					position: relative;
+					float: left;
+					background-image: url("../../../images/lien-arrow-prev.svg");
+					margin-left: -61px;
+					@include transition(0.15s);
+					@include responsive(s2) {
+						margin-right: 0px;
+					}
+					&:hover {
+						@include scale(0.9);
+					}
+				}
+			}
+			.owl-next {
+				background: none;
+				padding: 0px;
+				border-radius: 0px;
+				float: right;
+				&:hover {
+					background-color: transparent;
+				}
+				.arrow-next {
+					height: 50px;
+					width: 50px;
+					position: relative;
+					float: left;
+					background-image: url("../../../images/lien-arrow-next.svg");
+					margin-right: -180px;
+					@include transition(0.15s);
+					@include responsive(s2) {
+						margin-right: 0px;
+					}
+					&:hover {
+						@include scale(0.9);
 					}
 				}
 			}
