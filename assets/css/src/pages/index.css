@@ -244,11 +244,10 @@ textarea, .select2-container .select2-selection--single {
   background-color: rgba(87, 52, 34, 0.6);
   border: none;
   width: 100%;
-  border-radius: 0px;
+  border-radius: 1.8em;
   color: #FFF !important;
   height: 60px;
-  border-left: 0px solid rgba(87, 52, 34, 0.8);
-  padding: 0 1em;
+  padding: 0 1.5em;
   font-size: 1em;
   margin-bottom: 1em;
   -webkit-transition: all 0.25s ease-in-out 0s;
@@ -274,14 +273,6 @@ textarea, .select2-container .select2-selection--single {
   .default-input:placeholder-shown, input:placeholder-shown,
   textarea:placeholder-shown, .select2-container .select2-selection--single:placeholder-shown {
     color: #FFF; }
-  .default-input:hover, input:hover,
-  textarea:hover, .select2-container .select2-selection--single:hover, .default-input:focus, input:focus,
-  textarea:focus, .select2-container .select2-selection--single:focus {
-    border-left: 4px solid rgba(87, 52, 34, 0.8);
-    -webkit-transition: all 0.25s ease-in-out 0s;
-    -moz-transform: all 0.25s ease-in-out 0s;
-    -ms-transition: all 0.25s ease-in-out 0s;
-    transition: all 0.25s ease-in-out 0s; }
 
 #form-franqueado,
 #form-contact {
@@ -717,14 +708,9 @@ textarea {
     font-family: "Gotham-Book", sans-serif;
     font-size: 1.2rem; }
   #contato #form-contact input, #contato #form-contact textarea {
+    border-radius: 10px;
     background-color: #FFF;
     color: #58585a !important; }
-    #contato #form-contact input:hover, #contato #form-contact input:focus, #contato #form-contact textarea:hover, #contato #form-contact textarea:focus {
-      border-left: 4px solid #58585a;
-      -webkit-transition: all 0.25s ease-in-out 0s;
-      -moz-transform: all 0.25s ease-in-out 0s;
-      -ms-transition: all 0.25s ease-in-out 0s;
-      transition: all 0.25s ease-in-out 0s; }
   #contato #form-contact button {
     width: 15em;
     margin-top: 1em;

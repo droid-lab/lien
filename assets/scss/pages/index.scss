@@ -263,11 +263,10 @@ body {
 	background-color: rgba(87, 52, 34, 0.6);
 	border: none;
 	width: 100%;
-	border-radius: 0px;
+	border-radius: 1.8em;
 	color: $color-white !important;
 	height: 60px;
-	border-left: 0px solid rgba(87, 52, 34, 0.8);
-	padding: 0 1em;
+	padding: 0 1.5em;
 	font-size: 1em;
 	margin-bottom: 1em;
 	@include transition(0.25s);
@@ -275,11 +274,6 @@ body {
 		height: 50px;
 	}
 	@include placeholder($color-white);
-	&:hover,
-	&:focus {
-		border-left: 4px solid rgba(87, 52, 34, 0.8);
-		@include transition(0.25s);
-	}
 }
 
 #form-franqueado,
@@ -810,13 +804,9 @@ textarea {
 			font-size: 1.2rem;
 		}
 		input, textarea{
+			border-radius: 10px;
 			background-color: $color-white;
 			color: $color-dark-gray!important;
-			&:hover,
-			&:focus {
-				border-left: 4px solid $color-dark-gray;
-				@include transition(0.25s);
-			}
 		}
 		button{
 			width: 15em;
