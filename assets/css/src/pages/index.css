@@ -471,6 +471,13 @@ textarea {
       padding-left: 20px;
       position: relative;
       border: 1px solid #FFF; }
+      @media only screen and (max-width: 992px) {
+        #seja-um-franqueado .row-home button {
+          left: 0;
+          -webkit-transform: translatex(0rem) !important;
+          -moz-transform: translatex(0rem) !important;
+          -ms-transform: translatex(0rem) !important;
+          transform: translatex(0rem) !important; } }
       #seja-um-franqueado .row-home button:hover svg .cls-1 {
         fill: #FFF; }
       #seja-um-franqueado .row-home button svg {
@@ -596,6 +603,9 @@ textarea {
       right: 1.2em;
       background-image: url("../../../images/lien-btn-filter.svg");
       background-color: transparent; }
+      @media only screen and (max-width: 992px) {
+        #glossario .box-relative button {
+          right: 2em; } }
   #glossario ul {
     position: relative;
     float: left;
