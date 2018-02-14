@@ -59,7 +59,7 @@
 		&:after, &:before, span{
 			content: " ";
 			width: 22px;
-			height: 2px;
+			height: 1px;
 			display: block;
 			background: $color-orange;
 			border-radius: 0px;
@@ -71,8 +71,8 @@
 		}
 		span{
 			position: relative;
-			margin-top: 5px;
-			margin-bottom: 5px;
+			margin-top: 7px;
+			margin-bottom: 7px;
 			@include transition(.25s);
 			&:after{
 				content: "MENU";
@@ -90,16 +90,16 @@
 		}
 		&.active{
 			&:after{
-				-webkit-transform: rotate(45deg) translate(-5px, -5px);
-				-moz-transform: rotate(45deg) translate(-5px, -5px);
-				-ms-transform: rotate(45deg) translate(-5px, -5px);
-				transform: rotate(45deg) translate(-5px, -5px);
+				-webkit-transform: rotate(45deg) translate(-5px, -6px);
+				-moz-transform: rotate(45deg) translate(-5px, -6px);
+				-ms-transform: rotate(45deg) translate(-5px, -6px);
+				transform: rotate(45deg) translate(-5px, -6px);
 			}
 			&:before{
-				-webkit-transform: rotate(-45deg) translate(-5px, 5px);
-				-moz-transform: rotate(-45deg) translate(-5px, 5px);
-				-ms-transform: rotate(-45deg) translate(-5px, 5px);
-				transform: rotate(-45deg) translate(-5px, 5px);
+				-webkit-transform: rotate(-45deg) translate(-6px, 6px);
+				-moz-transform: rotate(-45deg) translate(-6px, 6px);
+				-ms-transform: rotate(-45deg) translate(-6px, 6px);
+				transform: rotate(-45deg) translate(-6px, 6px);
 			}
 			span{
 				@include opacity(0);

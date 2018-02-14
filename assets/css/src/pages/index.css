@@ -389,10 +389,13 @@ textarea {
     height: 15em;
     width: 7em;
     margin-left: -3.5em;
-    left: 70%;
+    left: 75%;
     bottom: 4em;
     background-image: url("../../../images/lien-abf-top.svg");
     background-repeat: no-repeat; }
+    @media only screen and (max-width: 1200px) {
+      #seja-um-franqueado .abf {
+        left: 80%; } }
     @media only screen and (max-width: 992px) {
       #seja-um-franqueado .abf {
         display: none !important; } }
@@ -410,9 +413,12 @@ textarea {
   #seja-um-franqueado .decoration-1 {
     height: 25em;
     width: 25em;
-    left: 70%;
+    left: 75%;
     margin-left: -12.5em;
     top: 25%; }
+    @media only screen and (max-width: 1200px) {
+      #seja-um-franqueado .decoration-1 {
+        left: 80%; } }
   #seja-um-franqueado .decoration-2 {
     height: 60em;
     width: 60em;
@@ -588,12 +594,9 @@ textarea {
         color: #F94615; }
       #glossario .box-relative input:placeholder-shown {
         color: #F94615; }
-      #glossario .box-relative input:hover, #glossario .box-relative input:focus {
-        border-left: 4px solid #58585a;
-        -webkit-transition: all 0.25s ease-in-out 0s;
-        -moz-transform: all 0.25s ease-in-out 0s;
-        -ms-transition: all 0.25s ease-in-out 0s;
-        transition: all 0.25s ease-in-out 0s; }
+      @media only screen and (max-width: 992px) {
+        #glossario .box-relative input {
+          font-size: 1.4em !important; } }
     #glossario .box-relative button {
       position: absolute;
       height: 25px;
@@ -605,7 +608,10 @@ textarea {
       background-color: transparent; }
       @media only screen and (max-width: 992px) {
         #glossario .box-relative button {
-          right: 2em; } }
+          right: 2em;
+          height: 20px;
+          width: 20px;
+          top: 1.6em; } }
   #glossario ul {
     position: relative;
     float: left;

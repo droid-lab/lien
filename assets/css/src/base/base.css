@@ -71,7 +71,7 @@
     #header-menu .hamburguer:after, #header-menu .hamburguer:before, #header-menu .hamburguer span {
       content: " ";
       width: 22px;
-      height: 2px;
+      height: 1px;
       display: block;
       background: #F94615;
       border-radius: 0px;
@@ -84,8 +84,8 @@
       margin-top: 11px; }
     #header-menu .hamburguer span {
       position: relative;
-      margin-top: 5px;
-      margin-bottom: 5px;
+      margin-top: 7px;
+      margin-bottom: 7px;
       -webkit-transition: all 0.25s ease-in-out 0s;
       -moz-transform: all 0.25s ease-in-out 0s;
       -ms-transition: all 0.25s ease-in-out 0s;
@@ -106,15 +106,15 @@
         -ms-transition: all 0.25s ease-in-out 0s;
         transition: all 0.25s ease-in-out 0s; }
     #header-menu .hamburguer.active:after {
-      -webkit-transform: rotate(45deg) translate(-5px, -5px);
-      -moz-transform: rotate(45deg) translate(-5px, -5px);
-      -ms-transform: rotate(45deg) translate(-5px, -5px);
-      transform: rotate(45deg) translate(-5px, -5px); }
+      -webkit-transform: rotate(45deg) translate(-5px, -6px);
+      -moz-transform: rotate(45deg) translate(-5px, -6px);
+      -ms-transform: rotate(45deg) translate(-5px, -6px);
+      transform: rotate(45deg) translate(-5px, -6px); }
     #header-menu .hamburguer.active:before {
-      -webkit-transform: rotate(-45deg) translate(-5px, 5px);
-      -moz-transform: rotate(-45deg) translate(-5px, 5px);
-      -ms-transform: rotate(-45deg) translate(-5px, 5px);
-      transform: rotate(-45deg) translate(-5px, 5px); }
+      -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+      -moz-transform: rotate(-45deg) translate(-6px, 6px);
+      -ms-transform: rotate(-45deg) translate(-6px, 6px);
+      transform: rotate(-45deg) translate(-6px, 6px); }
     #header-menu .hamburguer.active span {
       filter: alpha(opacity=0);
       -moz-opacity: 0;
