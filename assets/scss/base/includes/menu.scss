@@ -36,8 +36,8 @@
 				margin-top: 17px;
 			}
 			@include responsive(s4) {
-				height: 35px;
-				margin-top: 15px;
+				height: 27px;
+				margin-top: 17px;
 			}
 		}
     }
@@ -50,7 +50,7 @@
 		height: 40px;
 	    background: transparent;
 	    border-radius: 50%;
-	    border: 2px solid $color-orange;
+	    border: 1px solid $color-orange;
 		display: block;
 		cursor: pointer;
 		@include responsive(s4) {
@@ -59,20 +59,20 @@
 		&:after, &:before, span{
 			content: " ";
 			width: 22px;
-			height: 3px;
+			height: 2px;
 			display: block;
 			background: $color-orange;
 			border-radius: 0px;
 			@include transition(.25s);
-			margin-left: 7px;
+			margin-left: 8px;
 		}
 		&:before{
-			margin-top: 10px;
+			margin-top: 11px;
 		}
 		span{
 			position: relative;
-			margin-top: 4px;
-			margin-bottom: 4px;
+			margin-top: 5px;
+			margin-bottom: 5px;
 			@include transition(.25s);
 			&:after{
 				content: "MENU";
@@ -90,16 +90,16 @@
 		}
 		&.active{
 			&:after{
-				-webkit-transform: rotate(45deg) translate(-7px, -5px);
-				-moz-transform: rotate(45deg) translate(-7px, -5px);
-				-ms-transform: rotate(45deg) translate(-7px, -5px);
+				-webkit-transform: rotate(45deg) translate(-5px, -5px);
+				-moz-transform: rotate(45deg) translate(-5px, -5px);
+				-ms-transform: rotate(45deg) translate(-5px, -5px);
 				transform: rotate(45deg) translate(-5px, -5px);
 			}
 			&:before{
-				-webkit-transform: rotate(-45deg) translate(-5px, 4px);
-				-moz-transform: rotate(-45deg) translate(-5px, 4px);
-				-ms-transform: rotate(-45deg) translate(-5px, 4px);
-				transform: rotate(-45deg) translate(-5px, 4px);
+				-webkit-transform: rotate(-45deg) translate(-5px, 5px);
+				-moz-transform: rotate(-45deg) translate(-5px, 5px);
+				-ms-transform: rotate(-45deg) translate(-5px, 5px);
+				transform: rotate(-45deg) translate(-5px, 5px);
 			}
 			span{
 				@include opacity(0);
@@ -216,7 +216,7 @@
 					float: left;
 					list-style: none;
 					a{
-						text-decotaion:none;
+						text-decoration:none;
 						position: relative;
 						display: block;
 						margin: 0 1.1em;
@@ -229,7 +229,7 @@
 						-webkit-transition: background 0.3s, color 0.3s;
 						transition: background 0.3s, color 0.3s;
 						font-family: $font-secondary;
-						color: $color-black;
+						color: $color-white;
 						font-weight: 400;
 						&:hover{
 							text-decoration: none;
@@ -285,7 +285,7 @@
 				width: 100%;
 				top:0;
 				left:0;
-				background-color: $color-light-gray;
+				background-color: $color-orange;
 			}
 			@include responsive(s4) {
 				margin-top: 60px;

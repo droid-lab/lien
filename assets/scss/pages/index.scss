@@ -49,13 +49,9 @@ body {
 	}
 	@include responsive(s2) {
 		height: 4.2rem;
-		width: 12.8rem;
+		width: 100%;
 		font-size: 1rem;
-		margin-left: 50%;
-		-webkit-transform: translatex(-6.42rem) !important;
-		-moz-transform: translatex(-6.42rem) !important;
-		-ms-transform: translatex(-6.42rem) !important;
-		transform: translatex(-6.42rem) !important;
+		line-height: 60px;
 	}
 }
 
@@ -105,9 +101,16 @@ body {
 	font-weight: normal;
 	color: $color-white;
 	line-height: 1.3em;
+	@include responsive(s2){
+		font-size: 2em;
+	}
 	.extra-big{
 		font-family: $font-quaternary;
 		font-size: 6rem;
+		@include responsive(s2) {
+			font-size: 2.3em;
+			line-height: 1em;
+		}
 	}
 }
 
@@ -132,7 +135,7 @@ body {
 		left: 5px;
 	}
 	@include responsive(s4) {
-		font-size: 3.3em;
+		font-size: 4.5em;
 	}
 	@include responsive(s5) {
 		font-size: 3em;
@@ -192,6 +195,7 @@ body {
 	@include responsive(s2) {
 		margin-bottom: 1em;
 		margin-top: 1em;
+		font-size: 2.5em;
 	}
 	&:after {
 		content: '';
@@ -212,6 +216,9 @@ body {
 	.extra-big{
 		font-family: $font-quaternary;
 		font-size: 4rem;
+		@include responsive(s2){
+			font-size: 1.8em;
+		}
 	}
 }
 
@@ -319,6 +326,10 @@ textarea {
 }
 
 // Select2
+.select2-container--default.select2-container--open.select2-container--below .select2-selection--single, .select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple{
+	border-radius: 1.8em;
+}
+
 .select2-container{
 	.select2-results__option--highlighted[aria-selected] {
 		background-color: $color-orange;
@@ -333,6 +344,10 @@ textarea {
 		.select2-selection--single{
 			.select2-selection__arrow {
 				height: 60px;
+				@include responsive(s2) {
+					height: 50px;
+					padding-right: 2em;
+				}
 				width: 30px;
 				b {
 					border-color: transparent transparent $color-white transparent;
@@ -346,10 +361,17 @@ textarea {
 			line-height: 60px!important;
 			padding: 0px;
 			color: $color-white;
+			@include responsive(s2) {
+				line-height: 50px!important;
+			}
 		}
 		.select2-selection__arrow{
 			height: 60px;
 			width: 30px;
+			@include responsive(s2){
+				height: 50px;
+				padding-right: 2em;
+			}
 			b{
 				border-color: $color-white transparent transparent transparent;
 			}
@@ -376,6 +398,9 @@ textarea {
 		height: auto;
 	}
 	.row-cta {
+		@include responsive(s2) {
+			padding: 0 15px;
+		}
 		button {
 			margin-top: 2.1em;
 			margin-bottom: 5em;
@@ -384,6 +409,10 @@ textarea {
 			&:hover {
 				background-color: transparent;
 				color: $color-white;
+			}
+			@include responsive(s2) {
+				height: 50px;
+				line-height: 50px;
 			}
 		}
 	}
@@ -407,7 +436,7 @@ textarea {
 		background-image: url('../../../images/lien-abf-top.svg');
 		background-repeat: no-repeat;
 		@include responsive(s2) {
-			display: none;
+			display: none!important;
 		}
 	}
 	.decoration {
@@ -416,7 +445,7 @@ textarea {
 		background-image: url('../../../images/lien-logo-white.svg');
 		background-repeat: no-repeat;
 		@include responsive(s2){
-			display:none;
+			display:none!important;
 		}
 	}
 	.decoration-1{
@@ -457,10 +486,13 @@ textarea {
 				float: left;
 				opacity: 0.31;
 				left: 17px;
+				@include responsive(s2){
+					top: 5em;
+				}
 			}
 			margin-bottom: 2.85rem;
 			@include responsive(s2) {
-				margin-top: 2em;
+				margin-top: 1.3em;
 			}
 		}
 		p {
@@ -494,10 +526,18 @@ textarea {
 				position: absolute;
 				height: 30px;
 				left: 30px;
+				@include responsive(s2){
+					top: 14px;
+				}
 			}
 		}
 		.box-relative{
 			@extend .default-section;
+		}
+		.padding-left{
+			@include responsive(s2){
+				padding-left: 0px;
+			}
 		}
 	}
 }
@@ -506,6 +546,11 @@ textarea {
 	@extend .default-section;
 	margin-top: 2.14em;
 	margin-bottom: 2.14em;
+	img{
+		@include responsive(s2){
+			display: none!important;
+		}
+	}
 }
 
 #duvidas-frequentes {
@@ -536,7 +581,7 @@ textarea {
 		.question{
 			position: relative;
 			float: left;
-			width: 100%;
+			width: calc(100% - 3em);
 			font-family: $font-primary;
 			font-size: 1.5em;
 			color: $color-dark-gray;
@@ -547,7 +592,7 @@ textarea {
 		.awnser {
 			position: relative;
 			float: left;
-			width: 100%;
+			width: calc(100% - 6em);
 			font-family: $font-secondary;
 			font-size: 1.2em;
 			color: $color-dark-gray;
@@ -641,48 +686,46 @@ textarea {
 			}
 		}
 	}
-	.row-items{
-		.box-relative{
-			@extend .default-section;
-			.item-img {
-				border: 1px solid $color-dark-gray;
-				width: 100%;
-				height: 160px;
-			}
-			h2 {
-				color: $color-dark-gray;
-				font-size: 2em;
-				font-family: $font-quaternary;
-				margin-bottom: 0.5em;
-				text-align: center;
-			}
-			p {
-				color: $color-orange;
-				text-align: center;
-			}
-			button {
-				position: relative;
-				height: 2.5rem;
-				width: 10rem;
-				font-family: $font-secondary;
-				background-color: $color-orange;
-				border: none;
-				color: $color-white;
-				padding: 0px;
-				border-radius: 40px;
-				font-size: 0.8rem;
-				left: 50%;
-				letter-spacing: 0.5px;
-				text-transform: uppercase;
-				@include transition(0.25s);
-				-webkit-transform: translatex(-5rem) !important;
-				-moz-transform: translatex(-5rem) !important;
-				-ms-transform: translatex(-5rem) !important;
-				transform: translatex(-5rem) !important;
-				margin-bottom: 4em;
-				&:hover{
-					background-color: $color-dark-gray;
-				}
+	.box-relative {
+		@extend .default-section;
+		.item-img {
+			border: 1px solid $color-dark-gray;
+			width: 100%;
+			height: 160px;
+		}
+		h2 {
+			color: $color-dark-gray;
+			font-size: 2em;
+			font-family: $font-quaternary;
+			margin-bottom: 0.5em;
+			text-align: center;
+		}
+		p {
+			color: $color-orange;
+			text-align: center;
+		}
+		button {
+			position: relative;
+			height: 2.5rem;
+			width: 10rem;
+			font-family: $font-secondary;
+			background-color: $color-orange;
+			border: none;
+			color: $color-white;
+			padding: 0px;
+			border-radius: 40px;
+			font-size: 0.8rem;
+			left: 50%;
+			letter-spacing: 0.5px;
+			text-transform: uppercase;
+			@include transition(0.25s);
+			-webkit-transform: translatex(-5rem) !important;
+			-moz-transform: translatex(-5rem) !important;
+			-ms-transform: translatex(-5rem) !important;
+			transform: translatex(-5rem) !important;
+			margin-bottom: 4em;
+			&:hover {
+				background-color: $color-dark-gray;
 			}
 		}
 	}
@@ -795,18 +838,22 @@ textarea {
 			color: $color-white;
 			font-size: 1.4em;
 			font-family: $font-secondary;
+			margin-bottom: 2.5em;
 		}
 	}
 	#form-contact{
-		label{
-			color: $color-white;
-			font-family: $font-secondary;
-			font-size: 1.2rem;
-		}
 		input, textarea{
-			border-radius: 10px;
+			border-radius: 40px;
 			background-color: $color-white;
 			color: $color-dark-gray!important;
+			margin-bottom: 1.4em;
+			@include placeholder($color-dark-gray);
+			@include responsive(s2){
+				font-size: 1.4em !important;
+			}
+		}
+		textarea{
+			border-radius: 25px!important;
 		}
 		button{
 			width: 15em;
@@ -843,13 +890,26 @@ footer{
 		img {
 			height: 50px;
 			margin-bottom: 1em;
+			@include responsive(s2) {
+				display: none!important;
+			}
+		}
+		@include responsive(s2){
+			text-align: center;
 		}
 	}
 	.col-right{
 		img{
 			height: 50px;
 			margin-bottom: 1em;
+			@include responsive(s2) {
+				margin-top: 1.5em;
+				margin-bottom: 1.5em;
+			}
 		}
 		text-align: right;
+		@include responsive(s2) {
+			text-align: center;
+		}
 	}
 }

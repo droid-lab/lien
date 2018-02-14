@@ -54,13 +54,9 @@ body {
   @media only screen and (max-width: 992px) {
     .lien-button {
       height: 4.2rem;
-      width: 12.8rem;
+      width: 100%;
       font-size: 1rem;
-      margin-left: 50%;
-      -webkit-transform: translatex(-6.42rem) !important;
-      -moz-transform: translatex(-6.42rem) !important;
-      -ms-transform: translatex(-6.42rem) !important;
-      transform: translatex(-6.42rem) !important; } }
+      line-height: 60px; } }
 
 .lien-button-cta {
   width: 15rem;
@@ -103,9 +99,16 @@ body {
   font-weight: normal;
   color: #FFF;
   line-height: 1.3em; }
+  @media only screen and (max-width: 992px) {
+    .title-big-white {
+      font-size: 2em; } }
   .title-big-white .extra-big {
     font-family: "Gotham-Bold", sans-serif;
     font-size: 6rem; }
+    @media only screen and (max-width: 992px) {
+      .title-big-white .extra-big {
+        font-size: 2.3em;
+        line-height: 1em; } }
 
 .title-section {
   color: #58585a;
@@ -128,7 +131,7 @@ body {
     left: 5px; }
   @media only screen and (max-width: 480px) {
     .title-section {
-      font-size: 3.3em; } }
+      font-size: 4.5em; } }
   @media only screen and (max-width: 320px) {
     .title-section {
       font-size: 3em; } }
@@ -182,7 +185,8 @@ body {
   @media only screen and (max-width: 992px) {
     .title-cta {
       margin-bottom: 1em;
-      margin-top: 1em; } }
+      margin-top: 1em;
+      font-size: 2.5em; } }
   .title-cta:after {
     content: '';
     position: absolute;
@@ -201,6 +205,9 @@ body {
   .title-cta .extra-big {
     font-family: "Gotham-Bold", sans-serif;
     font-size: 4rem; }
+    @media only screen and (max-width: 992px) {
+      .title-cta .extra-big {
+        font-size: 1.8em; } }
 
 .sub-title-cta {
   position: relative;
@@ -299,6 +306,9 @@ textarea {
   .owl-carousel .owl-dots .owl-dot.active span {
     background-color: #F94615 !important; }
 
+.select2-container--default.select2-container--open.select2-container--below .select2-selection--single, .select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple {
+  border-radius: 1.8em; }
+
 .select2-container .select2-results__option--highlighted[aria-selected] {
   background-color: #F94615;
   color: white; }
@@ -311,6 +321,10 @@ textarea {
 .select2-container.select2-container--open .select2-selection--single .select2-selection__arrow {
   height: 60px;
   width: 30px; }
+  @media only screen and (max-width: 992px) {
+    .select2-container.select2-container--open .select2-selection--single .select2-selection__arrow {
+      height: 50px;
+      padding-right: 2em; } }
   .select2-container.select2-container--open .select2-selection--single .select2-selection__arrow b {
     border-color: transparent transparent #FFF transparent; }
 
@@ -318,14 +332,21 @@ textarea {
   line-height: 60px !important;
   padding: 0px;
   color: #FFF; }
+  @media only screen and (max-width: 992px) {
+    .select2-container .select2-selection--single .select2-selection__rendered {
+      line-height: 50px !important; } }
 
 .select2-container .select2-selection--single .select2-selection__arrow {
   height: 60px;
   width: 30px; }
+  @media only screen and (max-width: 992px) {
+    .select2-container .select2-selection--single .select2-selection__arrow {
+      height: 50px;
+      padding-right: 2em; } }
   .select2-container .select2-selection--single .select2-selection__arrow b {
     border-color: #FFF transparent transparent transparent; }
 
-.default-section, .cta-default, #seja-um-franqueado, #seja-um-franqueado .row-home .box-relative, #sobre, #duvidas-frequentes, #glossario, #glossario .box-relative, #seguradoras-associadas, #seguradoras-associadas .row-items .box-relative, #contato, footer {
+.default-section, .cta-default, #seja-um-franqueado, #seja-um-franqueado .row-home .box-relative, #sobre, #duvidas-frequentes, #glossario, #glossario .box-relative, #seguradoras-associadas, #seguradoras-associadas .box-relative, #contato, footer {
   position: relative;
   float: left;
   width: 100%; }
@@ -340,6 +361,10 @@ textarea {
   .cta-default {
     height: auto; } }
 
+@media only screen and (max-width: 992px) {
+  .cta-default .row-cta {
+    padding: 0 15px; } }
+
 .cta-default .row-cta button {
   margin-top: 2.1em;
   margin-bottom: 5em;
@@ -348,6 +373,10 @@ textarea {
   .cta-default .row-cta button:hover {
     background-color: transparent;
     color: #FFF; }
+  @media only screen and (max-width: 992px) {
+    .cta-default .row-cta button {
+      height: 50px;
+      line-height: 50px; } }
 
 #seja-um-franqueado {
   background: linear-gradient(rgba(249, 70, 21, 0.4), rgba(249, 70, 21, 0.4)), url("../../../images/lien-bg-top.jpg");
@@ -366,7 +395,7 @@ textarea {
     background-repeat: no-repeat; }
     @media only screen and (max-width: 992px) {
       #seja-um-franqueado .abf {
-        display: none; } }
+        display: none !important; } }
   #seja-um-franqueado .decoration {
     position: absolute;
     filter: alpha(opacity=0.9);
@@ -377,7 +406,7 @@ textarea {
     background-repeat: no-repeat; }
     @media only screen and (max-width: 992px) {
       #seja-um-franqueado .decoration {
-        display: none; } }
+        display: none !important; } }
   #seja-um-franqueado .decoration-1 {
     height: 25em;
     width: 25em;
@@ -420,9 +449,12 @@ textarea {
         float: left;
         opacity: 0.31;
         left: 17px; }
+        @media only screen and (max-width: 992px) {
+          #seja-um-franqueado .row-home h1:after {
+            top: 5em; } }
       @media only screen and (max-width: 992px) {
         #seja-um-franqueado .row-home h1 {
-          margin-top: 2em; } }
+          margin-top: 1.3em; } }
     #seja-um-franqueado .row-home p {
       margin-top: 1em;
       color: #FFF; }
@@ -450,10 +482,19 @@ textarea {
         position: absolute;
         height: 30px;
         left: 30px; }
+        @media only screen and (max-width: 992px) {
+          #seja-um-franqueado .row-home button svg {
+            top: 14px; } }
+    @media only screen and (max-width: 992px) {
+      #seja-um-franqueado .row-home .padding-left {
+        padding-left: 0px; } }
 
 #sobre {
   margin-top: 2.14em;
   margin-bottom: 2.14em; }
+  @media only screen and (max-width: 992px) {
+    #sobre img {
+      display: none !important; } }
 
 #duvidas-frequentes {
   margin-top: 2.14em;
@@ -476,7 +517,7 @@ textarea {
   #duvidas-frequentes .row-duvidas-frequentes .question {
     position: relative;
     float: left;
-    width: 100%;
+    width: calc(100% - 3em);
     font-family: "Gotham-Medium", sans-serif;
     font-size: 1.5em;
     color: #58585a;
@@ -486,7 +527,7 @@ textarea {
   #duvidas-frequentes .row-duvidas-frequentes .awnser {
     position: relative;
     float: left;
-    width: 100%;
+    width: calc(100% - 6em);
     font-family: "Gotham-Book", sans-serif;
     font-size: 1.2em;
     color: #58585a;
@@ -571,20 +612,20 @@ textarea {
   margin-bottom: 2.14em; }
   #seguradoras-associadas .row-seguradoras-associadas .title-section:after {
     top: 2.4em; }
-  #seguradoras-associadas .row-items .box-relative .item-img {
+  #seguradoras-associadas .box-relative .item-img {
     border: 1px solid #58585a;
     width: 100%;
     height: 160px; }
-  #seguradoras-associadas .row-items .box-relative h2 {
+  #seguradoras-associadas .box-relative h2 {
     color: #58585a;
     font-size: 2em;
     font-family: "Gotham-Bold", sans-serif;
     margin-bottom: 0.5em;
     text-align: center; }
-  #seguradoras-associadas .row-items .box-relative p {
+  #seguradoras-associadas .box-relative p {
     color: #F94615;
     text-align: center; }
-  #seguradoras-associadas .row-items .box-relative button {
+  #seguradoras-associadas .box-relative button {
     position: relative;
     height: 2.5rem;
     width: 10rem;
@@ -607,7 +648,7 @@ textarea {
     -ms-transform: translatex(-5rem) !important;
     transform: translatex(-5rem) !important;
     margin-bottom: 4em; }
-    #seguradoras-associadas .row-items .box-relative button:hover {
+    #seguradoras-associadas .box-relative button:hover {
       background-color: #58585a; }
   #seguradoras-associadas .owl-carousel .owl-dots {
     margin-top: 1em !important;
@@ -702,15 +743,28 @@ textarea {
     text-align: center;
     color: #FFF;
     font-size: 1.4em;
-    font-family: "Gotham-Book", sans-serif; }
-  #contato #form-contact label {
-    color: #FFF;
     font-family: "Gotham-Book", sans-serif;
-    font-size: 1.2rem; }
+    margin-bottom: 2.5em; }
   #contato #form-contact input, #contato #form-contact textarea {
-    border-radius: 10px;
+    border-radius: 40px;
     background-color: #FFF;
-    color: #58585a !important; }
+    color: #58585a !important;
+    margin-bottom: 1.4em; }
+    #contato #form-contact input::-webkit-input-placeholder, #contato #form-contact textarea::-webkit-input-placeholder {
+      color: #58585a; }
+    #contato #form-contact input::-moz-placeholder, #contato #form-contact textarea::-moz-placeholder {
+      color: #58585a; }
+    #contato #form-contact input:-ms-input-placeholder, #contato #form-contact textarea:-ms-input-placeholder {
+      color: #58585a; }
+    #contato #form-contact input:-moz-placeholder, #contato #form-contact textarea:-moz-placeholder {
+      color: #58585a; }
+    #contato #form-contact input:placeholder-shown, #contato #form-contact textarea:placeholder-shown {
+      color: #58585a; }
+    @media only screen and (max-width: 992px) {
+      #contato #form-contact input, #contato #form-contact textarea {
+        font-size: 1.4em !important; } }
+  #contato #form-contact textarea {
+    border-radius: 25px !important; }
   #contato #form-contact button {
     width: 15em;
     margin-top: 1em;
@@ -739,8 +793,21 @@ footer {
   footer .col-left img {
     height: 50px;
     margin-bottom: 1em; }
+    @media only screen and (max-width: 992px) {
+      footer .col-left img {
+        display: none !important; } }
+  @media only screen and (max-width: 992px) {
+    footer .col-left {
+      text-align: center; } }
   footer .col-right {
     text-align: right; }
     footer .col-right img {
       height: 50px;
       margin-bottom: 1em; }
+      @media only screen and (max-width: 992px) {
+        footer .col-right img {
+          margin-top: 1.5em;
+          margin-bottom: 1.5em; } }
+    @media only screen and (max-width: 992px) {
+      footer .col-right {
+        text-align: center; } }

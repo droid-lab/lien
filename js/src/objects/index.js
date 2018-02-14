@@ -144,21 +144,21 @@ Index = {
 	ScrollReveal: {
 		configs: {
 			animationSet1: {
-				duration : 600,
+				duration : 800,
 				origin   : 'left',
 				reset    : true,
 				delay    : 100,
 				scale    : 0
 			},
 			animationSet2: {
-				duration : 600,
+				duration : 800,
 				origin   : 'top',
 				reset    : true,
 				delay    : 100,
 				scale    : 0
 			},
 			animationSet3: {
-				duration : 600,
+				duration : 800,
 				origin   : 'bottom',
 				reset    : true,
 				delay    : 800,

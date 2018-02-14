@@ -357,7 +357,8 @@
 							<h2 class="title-h2 animation-1">Conheça quem são as nossas seguradoras associadas.</h2>
 						</div>
 					</div>
-					<div id="carousel-seguradoras-associadas" class="owl-carousel owl-theme">
+					<!-- Desktop -->
+					<div id="carousel-seguradoras-associadas" class="owl-carousel owl-theme hidden-xs hidden-sm">
 						<div class="item">
 							<div class="row row-items">
 								<div class="col-lg-3 col-md-3 col-sm-6">
@@ -495,6 +496,57 @@
 							</div>
 						</div>
 					</div>
+					<!-- Mobile -->
+					<div id="carousel-seguradoras-associadas-mobile" class="owl-carousel owl-theme carousel-default visible-xs visible-sm">
+						<div class="item">
+							<div class="box-relative">
+								<div class="item-img"></div>
+								<h2>Azul Seguros</h2>
+								<p>+55 43 3132-2070</p>
+								<button>Ir ao site</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="box-relative">
+								<div class="item-img"></div>
+								<h2>Azul Seguros</h2>
+								<p>+55 43 3132-2070</p>
+								<button>Ir ao site</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="box-relative">
+								<div class="item-img"></div>
+								<h2>Azul Seguros</h2>
+								<p>+55 43 3132-2070</p>
+								<button>Ir ao site</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="box-relative">
+								<div class="item-img"></div>
+								<h2>Azul Seguros</h2>
+								<p>+55 43 3132-2070</p>
+								<button>Ir ao site</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="box-relative">
+								<div class="item-img"></div>
+								<h2>Azul Seguros</h2>
+								<p>+55 43 3132-2070</p>
+								<button>Ir ao site</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="box-relative">
+								<div class="item-img"></div>
+								<h2>Azul Seguros</h2>
+								<p>+55 43 3132-2070</p>
+								<button>Ir ao site</button>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 			<!-- Contato -->
@@ -506,20 +558,16 @@
 							<h2 class="title-h2 animation-1">Entre em contato com a LIEN Corretora de Seguros <br/>Nós estamos prontos para lhe atender!</h2>
 							<form id="form-contact" data-validate="true">
 								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 animation-1">
-									<label for="work-here-name">Nome</label>
-									<input type="text" id="work-here-name" data-required="true" class="input-hbs-cambio">
+									<input type="text" id="contact-name" placeholder="Nome" data-required="true">
 								</div>
 								<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 animation-1">
-									<label for="work-here-email">Email</label>
-									<input type="text" id="work-here-email" data-email="true" class="input-hbs-cambio">
+									<input type="text" id="contact-email" placeholder="Email" data-email="true">
 								</div>
 								<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 animation-1">
-									<label for="work-here-phone">Telefone</label>
-									<input type="text" id="work-here-phone" data-required="true" data-inputmask="'mask': '(99) 9999-9999[9]'" class="input-hbs-cambio mask">
+									<input type="text" id="contact-phone" placeholder="Telefone" data-required="true" data-inputmask="'mask': '(99) 9999-9999[9]'">
 								</div>
 								<div class="col-lg-12 generic-relative animation-1">
-									<label for="work-here-message">Mensagem</label>
-									<textarea id="work-here-message" data-required="true" class="input-hbs-cambio textarea-hbs-cambio"></textarea>
+									<textarea id="contact-message" placeholder="Mensagem" data-required="true"></textarea>
 								</div>
 								<div class="col-lg-12 generic-relative animation-1">
 									<button class="lien-button work-here-send">Enviar</button>

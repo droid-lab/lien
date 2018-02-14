@@ -48,8 +48,8 @@
           margin-top: 17px; } }
       @media only screen and (max-width: 480px) {
         #header-menu header #logo-lien-top {
-          height: 35px;
-          margin-top: 15px; } }
+          height: 27px;
+          margin-top: 17px; } }
   #header-menu .hamburguer {
     width: 40px;
     position: fixed;
@@ -62,7 +62,7 @@
     height: 40px;
     background: transparent;
     border-radius: 50%;
-    border: 2px solid #F94615;
+    border: 1px solid #F94615;
     display: block;
     cursor: pointer; }
     @media only screen and (max-width: 480px) {
@@ -71,7 +71,7 @@
     #header-menu .hamburguer:after, #header-menu .hamburguer:before, #header-menu .hamburguer span {
       content: " ";
       width: 22px;
-      height: 3px;
+      height: 2px;
       display: block;
       background: #F94615;
       border-radius: 0px;
@@ -79,13 +79,13 @@
       -moz-transform: all 0.25s ease-in-out 0s;
       -ms-transition: all 0.25s ease-in-out 0s;
       transition: all 0.25s ease-in-out 0s;
-      margin-left: 7px; }
+      margin-left: 8px; }
     #header-menu .hamburguer:before {
-      margin-top: 10px; }
+      margin-top: 11px; }
     #header-menu .hamburguer span {
       position: relative;
-      margin-top: 4px;
-      margin-bottom: 4px;
+      margin-top: 5px;
+      margin-bottom: 5px;
       -webkit-transition: all 0.25s ease-in-out 0s;
       -moz-transform: all 0.25s ease-in-out 0s;
       -ms-transition: all 0.25s ease-in-out 0s;
@@ -106,15 +106,15 @@
         -ms-transition: all 0.25s ease-in-out 0s;
         transition: all 0.25s ease-in-out 0s; }
     #header-menu .hamburguer.active:after {
-      -webkit-transform: rotate(45deg) translate(-7px, -5px);
-      -moz-transform: rotate(45deg) translate(-7px, -5px);
-      -ms-transform: rotate(45deg) translate(-7px, -5px);
+      -webkit-transform: rotate(45deg) translate(-5px, -5px);
+      -moz-transform: rotate(45deg) translate(-5px, -5px);
+      -ms-transform: rotate(45deg) translate(-5px, -5px);
       transform: rotate(45deg) translate(-5px, -5px); }
     #header-menu .hamburguer.active:before {
-      -webkit-transform: rotate(-45deg) translate(-5px, 4px);
-      -moz-transform: rotate(-45deg) translate(-5px, 4px);
-      -ms-transform: rotate(-45deg) translate(-5px, 4px);
-      transform: rotate(-45deg) translate(-5px, 4px); }
+      -webkit-transform: rotate(-45deg) translate(-5px, 5px);
+      -moz-transform: rotate(-45deg) translate(-5px, 5px);
+      -ms-transform: rotate(-45deg) translate(-5px, 5px);
+      transform: rotate(-45deg) translate(-5px, 5px); }
     #header-menu .hamburguer.active span {
       filter: alpha(opacity=0);
       -moz-opacity: 0;
@@ -221,7 +221,7 @@
         float: left;
         list-style: none; }
         #header-menu .bg-shared .menu-container ul li a {
-          text-decotaion: none;
+          text-decoration: none;
           position: relative;
           display: block;
           margin: 0 1.1em;
@@ -234,7 +234,7 @@
           -webkit-transition: background 0.3s, color 0.3s;
           transition: background 0.3s, color 0.3s;
           font-family: "Gotham-Book", sans-serif;
-          color: #000;
+          color: #FFF;
           font-weight: 400; }
           #header-menu .bg-shared .menu-container ul li a:hover {
             text-decoration: none; }
@@ -291,7 +291,7 @@
         width: 100%;
         top: 0;
         left: 0;
-        background-color: #6f6f6f; } }
+        background-color: #F94615; } }
     @media only screen and (max-width: 480px) {
       #header-menu .bg-shared .menu-container {
         margin-top: 60px; } }
