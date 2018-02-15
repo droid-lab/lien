@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
-		<title>LIEN Corretora de Seguros</title>
+		<title>LIEN | Corretora de Seguros</title>
 		<!-- Meta Tags -->
 		<meta charset="utf-8">
 		<meta name="keywords"            content=""/>
@@ -29,7 +29,7 @@
 		<!-- Canonical -->
 		<link rel="canonical" href=""/>
 		<!-- FavIcon -->
-		<link href="./assets/images/lien-favicon.png" rel="icon" type="image/x-icon"/>
+		<link href="./assets/images/lien-favicon.ico" rel="icon" type="image/x-icon"/>
 		<!-- CSS -->
 		<link href="./assets/css/src/bootstrap/bootstrap.css"                rel="stylesheet" type="text/css"/>
 		<link href="./assets/css/src/libs/owl.carousel/owl.carousel.min.css" rel="stylesheet" type="text/css"/>
@@ -74,7 +74,7 @@
 								<a href="#seguradoras-associadas" class="go-menu">Seguradoras</a>
 							</li>
 							<li class="menu-item">
-								<a href="#contato" class="go-menu">Contato</a>
+								<a href="#contato" class="go-menu go-contact">Contato</a>
 							</li>
 						</ul>
 					</div>
@@ -118,18 +118,19 @@
 						<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
 							<h1 class="title-big-white">Seja um <br/> <span class="extra-big">Franqueado</span></h1>
 							<p class="p-default animation-1">Preencha o cadastro abaixo e faça o <span>download</span> agora mesmo da nossa apresentação com as vantagens de ser um franqueado <span>LIEN.</span></p>
-							<form id="form-franqueado">
+							<form id="form-franchisee" data-validate="true">
 								<div class="col-lg-12 no-padding animation-2">
-									<input type="text" placeholder="Nome" id="name" name="name"/>
+									<input type="text" placeholder="Nome" id="franchisee-name" name="franchisee-name" data-required="true"/>
 								</div>
 								<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 no-padding animation-2">
-									<input type="text" placeholder="Telefone" id="phone" name="phone" class="mask" data-inputmask="'mask': '(99) 9999-9999[9]'"/>
+									<input type="text" placeholder="Telefone" id="franchisee-phone" name="franchisee-phone" class="mask" data-inputmask="'mask': '(99) 9999-9999[9]'" data-required="true"/>
 								</div>
 								<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 no-padding padding-left animation-2">
-									<input type="text" placeholder="E-mail" id="email" name="email" />
+									<input type="text" placeholder="E-mail" id="franchisee-email" name="franchisee-email" data-email="true"/>
 								</div>
 								<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 no-padding animation-2">
-									<select name="state" id="state">
+									<select name="franchisee-state" id="franchisee-state" data-select="true">
+										<option value="0">Estado</option>
 										<option value="AC">Acre</option>
 										<option value="AL">Alagoas</option>
 										<option value="AP">Amapá</option>
@@ -160,14 +161,16 @@
 									</select>
 								</div>
 								<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 no-padding padding-left animation-2">
-									<select name="city" id="city">
+									<select name="franchisee-city" id="franchisee-city" data-select="true">
+										<option value="0">Cidade</option>
 										<option value="cornelio-procopio">Cornélio Procópio</option>
 										<option value="londrina">Londrina</option>
 									</select>
 								</div>
 							</form>
+							<div class="fill-message fill-message-franchisee"></div>
 							<div class="animation-3 box-relative">
-								<button class="lien-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="602 926.4 38 38"> <defs> <style>.cls-1{fill: #58595b;}</style> </defs> <g id="down-arrow" transform="translate(600 926.4)"> <g id="Group_56" data-name="Group 56" transform="translate(2)"> <path id="Path_48" data-name="Path 48" class="cls-1" d="M38,19A19,19,0,1,0,19,38,19.022,19.022,0,0,0,38,19ZM1.9,19A17.1,17.1,0,1,1,19,36.1,17.12,17.12,0,0,1,1.9,19Z"/> <path id="Path_49" data-name="Path 49" class="cls-1" d="M170.966,144.532l5.339-5.339a.948.948,0,0,0-1.341-1.341l-3.719,3.719V127.353a.953.953,0,1,0-1.906,0v14.211l-3.719-3.719a.948.948,0,1,0-1.341,1.341l5.339,5.339a.964.964,0,0,0,1.348.008Z" transform="translate(-151.292 -116.606)"/> </g> </g></svg>Baixar Apresentação</button>
+								<button class="lien-button btn-send-franchisee"><svg xmlns="http://www.w3.org/2000/svg" viewBox="602 926.4 38 38"> <defs> <style>.cls-1{fill: #58595b;}</style> </defs> <g id="down-arrow" transform="translate(600 926.4)"> <g id="Group_56" data-name="Group 56" transform="translate(2)"> <path id="Path_48" data-name="Path 48" class="cls-1" d="M38,19A19,19,0,1,0,19,38,19.022,19.022,0,0,0,38,19ZM1.9,19A17.1,17.1,0,1,1,19,36.1,17.12,17.12,0,0,1,1.9,19Z"/> <path id="Path_49" data-name="Path 49" class="cls-1" d="M170.966,144.532l5.339-5.339a.948.948,0,0,0-1.341-1.341l-3.719,3.719V127.353a.953.953,0,1,0-1.906,0v14.211l-3.719-3.719a.948.948,0,1,0-1.341,1.341l5.339,5.339a.964.964,0,0,0,1.348.008Z" transform="translate(-151.292 -116.606)"/> </g> </g></svg>Baixar Apresentação</button>
 							</div>
 						</div>
 					</div>
@@ -180,17 +183,17 @@
 						<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
 							<h1 class="title-section">Sobre</h1>
 							<img src="./assets/images/lien-about-logo.svg" class="img-decorative animation-1" alt="Logo LIEN" />
-							<h2 class="title-h2 animation-1">Conheça um pouco mais sobre a LIEN Corretora de Seguros.</h2>
+							<h2 class="title-h2 animation-4">Conheça um pouco mais sobre a LIEN Corretora de Seguros.</h2>
 							<p class="p-default animation-1">Saber que seus bens estão seguros é viver com mais tranquilidade, podendo dedicar seu tempo no que mais importa para você.
 							Pensando nisso a <span>LIEN Corretora de Seguros</span> trabalha oferecendo facilidade e transparência. Uma corretora atual que busca
 							a melhoria contínua em seus processos e serviços.</p>
-							<p class="p-default animation-1">Nosso <span>objetivo</span> é proporcionar segurança e despreocupação, por isso contamos com uma consultoria especializada que visa orientar
+							<p class="p-default animation-4">Nosso <span>objetivo</span> é proporcionar segurança e despreocupação, por isso contamos com uma consultoria especializada que visa orientar
 							e apresentar a proposta de seguro mais adequada às suas necessidades, através de uma análise minuciosa para oferecer o melhor
 							custo-benefício com a certeza de uma apólice bem elaborada.</p>
 							<p class="p-default animation-1">No <span>site</span> é possível solicitar cotações, tirar dúvidas e compreender em detalhes tudo sobre o seguro contratado. Isso permitirá
 							usufruir de todas as facilidades que o seguro oferece e ainda ter a certeza de estar realmente assistido, caso tenha a necessidade
 							de acionar os serviços.</p>
-							<p class="p-default animation-1">Com a <span>LIEN Corretora de Seguros</span> você estará protegido e terá todo o suporte de nossa consultoria especializada com agilidade
+							<p class="p-default animation-4">Com a <span>LIEN Corretora de Seguros</span> você estará protegido e terá todo o suporte de nossa consultoria especializada com agilidade
 							e clareza. Conheça nossos serviços, faça um seguro com a LIEN.</p>
 						</div>
 					</div>
@@ -207,7 +210,7 @@
 										<h1 class="title-cta">Conheça as nossas opções de seguro <br/><span class="extra-big">Empresarial</span></h1>
 										<h2 class="sub-title-cta">A diferença de cotações entre bancos, corretoras e casas de câmbio pode chegar a 37%. A Câmbio Store reúne todas as opções
 											em um único lugar para facilitar a comparação dos valores e a troca de moeda estrangeira.</h2>
-										<button class="lien-button lien-button-cta">Fale Conosco</button>
+										<button class="lien-button lien-button-cta btn-go-contact">Fale Conosco</button>
 									</div>
 								</div>
 							</div>
@@ -219,7 +222,7 @@
 										<h1 class="title-cta">Conheça as nossas opções de seguro <br/><span class="extra-big">Empresarial</span></h1>
 										<h2 class="sub-title-cta">A diferença de cotações entre bancos, corretoras e casas de câmbio pode chegar a 37%. A Câmbio Store reúne todas as opções
 											em um único lugar para facilitar a comparação dos valores e a troca de moeda estrangeira.</h2>
-										<button class="lien-button lien-button-cta">Fale Conosco</button>
+										<button class="lien-button lien-button-cta btn-go-contact">Fale Conosco</button>
 									</div>
 								</div>
 							</div>
@@ -234,19 +237,21 @@
 						<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
 							<h1 class="title-section">Dúvidas Frequentes</h1>
 							<h2 class="title-h2 animation-1">A LIEN te ajuda a entender melhor o mundo dos seguros.</h2>
-							<p class="p-light animation-1">clique no tópico para ver mais</p>
-							<h3 class="animation-1">Seguro de Automóvel</h3>
-							<p class="question animation-1">1. O que caracteriza a indenização integral em caso de ocorrência de sinistro?</p>
-							<p class="awnser animation-1">R. A indenização integral é caracterizada quando os prejuízos resultantes de um mesmo sinistro atingirem ou ultrapassarem 75% (ou percentual inferior quando previsto na apólice) do valor contratado pelo segurado. Em caso de roubo ou furto do veículo sem que o mesmo seja recuperado, há também a indenização integral.</p>
-							<p class="question animation-1">2. Como devo proceder para o recebimento de indenização integral?</p>
-							<p class="awnser animation-1">R. No caso de indenização integral, o segurado deverá, ocorrendo sinistro, avisar imediatamente a seguradora, preencher o formulário de aviso de sinistro e apresentar a documentação necessária, definida nas condições gerais do seguro. Nos casos de indenização integral, o documento de transferência de propriedade do veículo deverá ser devidamente preenchido com os dados de seu proprietário e da sociedade seguradora.</p>
-							<h3 class="closed animation-1">Capitalização</h3>
+							<p class="p-light animation-4">clique no tópico para ver mais</p>
+							<h3 class="animation-1" data-toggle="collapse" data-target="#s1">Seguro de Automóvel</h3>
+							<div id="s1" class="collapse generic-relative">
+								<p class="question" data-toggle="collapse" data-target="#r1">1. O que caracteriza a indenização integral em caso de ocorrência de sinistro?</p>
+								<p id="r1" class="awnser collapse">R. A indenização integral é caracterizada quando os prejuízos resultantes de um mesmo sinistro atingirem ou ultrapassarem 75% (ou percentual inferior quando previsto na apólice) do valor contratado pelo segurado. Em caso de roubo ou furto do veículo sem que o mesmo seja recuperado, há também a indenização integral.</p>
+								<p class="question" data-toggle="collapse" data-target="#r2">2. Como devo proceder para o recebimento de indenização integral?</p>
+								<p id="r2" class="awnser collapse">R. No caso de indenização integral, o segurado deverá, ocorrendo sinistro, avisar imediatamente a seguradora, preencher o formulário de aviso de sinistro e apresentar a documentação necessária, definida nas condições gerais do seguro. Nos casos de indenização integral, o documento de transferência de propriedade do veículo deverá ser devidamente preenchido com os dados de seu proprietário e da sociedade seguradora.</p>
+							</div>
+							<h3 class="closed animation-4">Capitalização</h3>
 							<h3 class="closed animation-1">DPVAT - Seguro de Danos Pessoais Causados por Veículos Automotor</h3>
-							<h3 class="closed animation-1">Perguntas sobre planos por sobrevivência - VGBL e PGBL.</h3>
+							<h3 class="closed animation-4">Perguntas sobre planos por sobrevivência - VGBL e PGBL.</h3>
 							<h3 class="closed animation-1">Perguntas sobre previdência complementar aberta.</h3>
-							<h3 class="closed animation-1">Perguntas sobre seguro de pessoas.</h3>
+							<h3 class="closed animation-4">Perguntas sobre seguro de pessoas.</h3>
 							<h3 class="closed animation-1">Perguntas sobre seguro residencial.</h3>
-							<h3 class="closed animation-1">Perguntas sobre seguros (dúvidas referentes a todos os tipos de seguro).</h3>
+							<h3 class="closed animation-4">Perguntas sobre seguros (dúvidas referentes a todos os tipos de seguro).</h3>
 						</div>
 					</div>
 				</div>
@@ -262,7 +267,7 @@
 										<h1 class="title-cta">Conheça as nossas opções de seguro <br/><span class="extra-big">Empresarial</span></h1>
 										<h2 class="sub-title-cta">A diferença de cotações entre bancos, corretoras e casas de câmbio pode chegar a 37%. A Câmbio Store reúne todas as opções
 											em um único lugar para facilitar a comparação dos valores e a troca de moeda estrangeira.</h2>
-										<button class="lien-button lien-button-cta">Fale Conosco</button>
+										<button class="lien-button lien-button-cta btn-go-contact">Fale Conosco</button>
 									</div>
 								</div>
 							</div>
@@ -274,7 +279,7 @@
 										<h1 class="title-cta">Conheça as nossas opções de seguro <br/><span class="extra-big">Empresarial</span></h1>
 										<h2 class="sub-title-cta">A diferença de cotações entre bancos, corretoras e casas de câmbio pode chegar a 37%. A Câmbio Store reúne todas as opções
 											em um único lugar para facilitar a comparação dos valores e a troca de moeda estrangeira.</h2>
-										<button class="lien-button lien-button-cta">Fale Conosco</button>
+										<button class="lien-button lien-button-cta btn-go-contact">Fale Conosco</button>
 									</div>
 								</div>
 							</div>
@@ -289,30 +294,18 @@
 						<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
 							<h1 class="title-section">Glossário</h1>
 							<h2 class="title-h2 animation-1">Que tal saber mais sobre seguros de A a Z?</h2>
-							<h3 class="animation-1">Com qual letra começa o termo que procura?</h3>
-							<h4 class="animation-1"><span>A</span> B C D E F G H I J L M N O P Q R S Q U V X Z</h4>
-							<p class="title-glossario animation-1">ABALROAMENTO</p>
-							<p class="description-glossario animation-1">Choque do navio ou embarcação com outro navio ou embarcação, cais, bóia, ou qualquer outro objeto que possa gerar algum dano, de maneira acidental. (Circular SUSEP 354/07).</p>
-							<div class="box-relative animation-1">
-								<input type="text" placeholder="Filtrar"/>
+							<h3 class="animation-4">Com qual letra começa o termo que procura?</h3>
+							<h4 id="letters" class="animation-1"></h4>
+							<div class="box-relative animation-4">
+								<input id="filter-glossary" type="text" placeholder="Filtrar"/>
 								<button class="filter"></button>
 							</div>
-							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 no-padding animation-1">
-								<ul>
-									<li>ABALROAMENTO</li>
-									<li>ACEIRO</li>
-									<li>ACIDENTE PESSOAL</li>
-									<li>ACIDENTE PESSOAL DE PASSAGEIROS</li>
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding animation-1">
+								<ul id="items">
 								</ul>
 							</div>
-							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 no-padding animation-1">
-								<ul>
-									<li>ABALROAMENTO</li>
-									<li>ACEIRO</li>
-									<li>ACIDENTE PESSOAL</li>
-									<li>ACIDENTE PESSOAL DE PASSAGEIROS</li>
-								</ul>
-							</div>
+							<p class="title-glossario"></p>
+							<p class="description-glossario"></p>
 						</div>
 					</div>
 				</div>
@@ -328,7 +321,7 @@
 										<h1 class="title-cta">Conheça as nossas opções de seguro <br/><span class="extra-big">Empresarial</span></h1>
 										<h2 class="sub-title-cta">A diferença de cotações entre bancos, corretoras e casas de câmbio pode chegar a 37%. A Câmbio Store reúne todas as opções
 											em um único lugar para facilitar a comparação dos valores e a troca de moeda estrangeira.</h2>
-										<button class="lien-button lien-button-cta">Fale Conosco</button>
+										<button class="lien-button lien-button-cta btn-go-contact">Fale Conosco</button>
 									</div>
 								</div>
 							</div>
@@ -340,7 +333,7 @@
 										<h1 class="title-cta">Conheça as nossas opções de seguro <br/><span class="extra-big">Empresarial</span></h1>
 										<h2 class="sub-title-cta">A diferença de cotações entre bancos, corretoras e casas de câmbio pode chegar a 37%. A Câmbio Store reúne todas as opções
 											em um único lugar para facilitar a comparação dos valores e a troca de moeda estrangeira.</h2>
-										<button class="lien-button lien-button-cta">Fale Conosco</button>
+										<button class="lien-button lien-button-cta btn-go-contact">Fale Conosco</button>
 									</div>
 								</div>
 							</div>
@@ -560,17 +553,18 @@
 								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 animation-1">
 									<input type="text" id="contact-name" placeholder="Nome" data-required="true">
 								</div>
-								<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 animation-1">
+								<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 animation-4">
 									<input type="text" id="contact-email" placeholder="Email" data-email="true">
 								</div>
 								<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 animation-1">
-									<input type="text" id="contact-phone" placeholder="Telefone" data-required="true" data-inputmask="'mask': '(99) 9999-9999[9]'">
+									<input type="text" id="contact-phone" placeholder="Telefone" class="mask" data-required="true" data-inputmask="'mask': '(99) 9999-9999[9]'">
 								</div>
-								<div class="col-lg-12 generic-relative animation-1">
+								<div class="col-lg-12 generic-relative animation-4">
 									<textarea id="contact-message" placeholder="Mensagem" data-required="true"></textarea>
 								</div>
-								<div class="col-lg-12 generic-relative animation-1">
-									<button class="lien-button work-here-send">Enviar</button>
+								<div class="fill-message fill-message-contact"></div>
+								<div class="col-lg-12 generic-relative animation-2">
+									<button class="lien-button btn-send-contact">Enviar</button>
 								</div>
 							</form>
 						</div>
@@ -581,12 +575,12 @@
 			<footer>
 				<div class="container">
 					<div class="row">
-						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col-left animation-2">
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col-left animation-1">
 							<img src="./assets/images/lien-abf-footer.svg" alt="Logo ABF"/>
 							<p>© 2015 - 2018 - LIEN Corretora de Seguros.</p>
 							<p>Associada ABF.</p>
 						</div>
-						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col-right animation-2">
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col-right animation-4">
 							<img src="./assets/images/lien-footer-logo.svg" alt="Logo LIEN Branco"/>
 							<p>CNPJ: 22.170.308/0001-18. Cornélio Procópio - Paraná</p>
 							<p>(43) 5094-5050</p>
@@ -597,6 +591,8 @@
 		</main>
 		<!-- Libs Js -->
 		<script src="./js/src/all/all.js"></script>
+		<!-- Bootstrap -->
+		<script src="./js/src/bootstrap/bootstrap.js"></script>
 		<!-- Oracle -->
 		<script src="./js/src/oracle/oracle.js"></script>
 		<!-- Index -->

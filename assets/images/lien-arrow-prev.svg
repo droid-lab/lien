@@ -3,13 +3,10 @@
 <svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#F94615;}
-	.st1{fill:none;stroke:#F94615;stroke-width:2.0585;stroke-miterlimit:10;}
+	.st0{fill:#6F6F6F;}
 </style>
-<g>
-	<path class="st0" d="M39.3,23.6H14l6.1-6.1c0.5-0.5,0.5-1.4,0-1.9s-1.4-0.5-1.9,0L9.7,24c-0.5,0.5-0.5,1.4,0,1.9l8.4,8.4
-		c0.3,0.3,0.6,0.4,1,0.4c0.3,0,0.7-0.1,1-0.4c0.5-0.5,0.5-1.4,0-1.9l-6.1-6h25.4c0.7,0,1.4-0.6,1.4-1.4
-		C40.7,24.3,40.1,23.6,39.3,23.6z"/>
-</g>
-<circle class="st1" cx="25" cy="25" r="23.8"/>
+<path class="st0" d="M15.5,24l21,21c0.6,0.6,0.6,1.5,0,2.1l0,0c-0.6,0.6-1.5,0.6-2.1,0l-21-21c-0.6-0.6-0.6-1.5,0-2.1l0,0
+	C14.1,23.4,15,23.4,15.5,24z"/>
+<path class="st0" d="M13.5,24l21-21c0.6-0.6,1.5-0.6,2.1,0l0,0c0.6,0.6,0.6,1.5,0,2.1l-21,21c-0.6,0.6-1.5,0.6-2.1,0l0,0
+	C12.9,25.5,12.9,24.6,13.5,24z"/>
 </svg>

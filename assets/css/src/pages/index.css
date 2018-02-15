@@ -112,7 +112,7 @@ body {
 
 .title-section {
   color: #58585a;
-  font-size: 6em;
+  font-size: 4.8em;
   position: relative;
   float: left;
   width: 100%;
@@ -257,6 +257,7 @@ textarea, .select2-container .select2-selection--single {
   height: 60px;
   padding: 0 1.5em;
   font-size: 1em;
+  border: 1px solid transparent;
   margin-bottom: 1em;
   -webkit-transition: all 0.25s ease-in-out 0s;
   -moz-transform: all 0.25s ease-in-out 0s;
@@ -282,7 +283,7 @@ textarea, .select2-container .select2-selection--single {
   textarea:placeholder-shown, .select2-container .select2-selection--single:placeholder-shown {
     color: #FFF; }
 
-#form-franqueado,
+#form-franchisee,
 #form-contact {
   position: relative;
   float: left;
@@ -292,6 +293,36 @@ textarea {
   height: 120px;
   padding-top: 1em;
   resize: none; }
+
+.fill-message {
+  position: relative;
+  float: left;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  float: left;
+  width: 100%;
+  font-family: "Gotham-Book", sans-serif;
+  font-size: 1.1em;
+  color: #FFF;
+  margin-top: 2em;
+  margin-bottom: 0em;
+  line-height: 1.6em;
+  display: none; }
+  @media only screen and (max-width: 992px) {
+    .fill-message {
+      font-size: 1.35em; } }
+
+.fill-message-contact {
+  margin-top: 1em;
+  margin-bottom: 1em; }
+
+.error-form {
+  -webkit-transition: all 0.25s ease-in-out 0s;
+  -moz-transform: all 0.25s ease-in-out 0s;
+  -ms-transition: all 0.25s ease-in-out 0s;
+  transition: all 0.25s ease-in-out 0s;
+  border: 1px solid #F94615 !important; }
 
 .owl-carousel .owl-dots {
   margin-top: -3em !important;
@@ -308,7 +339,12 @@ textarea {
     background-color: #F94615 !important; }
 
 .select2-container--default.select2-container--open.select2-container--below .select2-selection--single, .select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple {
-  border-radius: 1.8em; }
+  border-radius: 10px; }
+
+.select2-container.error-form {
+  border: none !important; }
+  .select2-container.error-form .select2-selection--single {
+    border: 1px solid #F94615; }
 
 .select2-container .select2-results__option--highlighted[aria-selected] {
   background-color: #F94615;
@@ -347,7 +383,7 @@ textarea {
   .select2-container .select2-selection--single .select2-selection__arrow b {
     border-color: #FFF transparent transparent transparent; }
 
-.default-section, .cta-default, #seja-um-franqueado, #seja-um-franqueado .row-home .box-relative, #sobre, #duvidas-frequentes, #glossario, #glossario .box-relative, #seguradoras-associadas, #seguradoras-associadas .box-relative, #contato, footer {
+.default-section, .cta-default, #seja-um-franqueado, #seja-um-franqueado .row-home .box-relative, #sobre, #duvidas-frequentes, #glossario, #glossario h3, #glossario h4, #glossario .title-glossario, #glossario .description-glossario, #glossario .box-relative, #seguradoras-associadas, #seguradoras-associadas .box-relative, #contato, footer {
   position: relative;
   float: left;
   width: 100%; }
@@ -459,7 +495,7 @@ textarea {
         height: 8px;
         width: 2em;
         background-color: #000000;
-        top: 3.8em;
+        top: 3.1em;
         float: left;
         opacity: 0.31;
         left: 17px; }
@@ -535,7 +571,8 @@ textarea {
     margin-bottom: 1.4em;
     line-height: 1.4em;
     margin-top: 0;
-    margin-bottom: 1.2em; }
+    margin-bottom: 1.2em;
+    cursor: pointer; }
   #duvidas-frequentes .row-duvidas-frequentes .question {
     position: relative;
     float: left;
@@ -545,7 +582,8 @@ textarea {
     color: #58585a;
     margin-bottom: 1.4em;
     line-height: 1.4em;
-    margin-left: 3em; }
+    margin-left: 3em;
+    cursor: pointer; }
   #duvidas-frequentes .row-duvidas-frequentes .awnser {
     position: relative;
     float: left;
@@ -564,19 +602,28 @@ textarea {
     color: #58585a;
     font-family: "Gotham-Book", sans-serif;
     font-size: 1.4em;
-    margin-bottom: 2em; }
+    margin-bottom: 1.5em; }
   #glossario h4 {
     color: #F94615;
     font-family: "Gotham-Book", sans-serif;
-    margin-bottom: 2em;
+    font-size: 1.4em;
+    margin-bottom: 1.5em;
     font-weight: normal; }
-    #glossario h4 span {
+  #glossario .format-letter {
+    position: relative;
+    float: left;
+    margin-right: 5px;
+    cursor: pointer; }
+    #glossario .format-letter.hl {
       font-family: "Gotham-Bold", sans-serif; }
   #glossario .title-glossario {
     color: #F94615;
     font-family: "Gotham-Bold", sans-serif;
+    margin-top: 1em;
     margin-bottom: 1em;
     font-size: 1.5em; }
+  #glossario #filter-glossary {
+    margin: 0; }
   #glossario .description-glossario {
     margin-left: 3em;
     font-family: "Gotham-Book", sans-serif;
@@ -631,7 +678,11 @@ textarea {
     #glossario ul li {
       list-style-type: none;
       color: #58585a;
-      font-size: 1.1em; }
+      font-size: 1.1em;
+      cursor: pointer; }
+      #glossario ul li .hl {
+        color: #F94615;
+        text-transform: uppercase; }
 
 #seguradoras-associadas {
   margin-top: 2.14em;
@@ -692,7 +743,7 @@ textarea {
       background-color: #F94615 !important; }
   #seguradoras-associadas #carousel-seguradoras-associadas .owl-nav {
     position: absolute;
-    top: calc(50% - 81px);
+    top: calc(50% - 121px);
     margin: 0px;
     width: 100%;
     z-index: -1; }

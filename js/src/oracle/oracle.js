@@ -98,7 +98,7 @@ Validation = {
     focusEl : null,
     radios  : [],
     config  : {
-        errorClass : "error-esss"
+        errorClass : "error-form"
     },
     check: function(formId, callBack){
         Shared.Debug.log("Validation Checked");
