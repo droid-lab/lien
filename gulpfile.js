@@ -35,6 +35,7 @@ Gulp = {
 			})
 			Gulp.self.watch('./assets/scss/**', ['scss'])
 			Gulp.self.watch('./*.html').on('change', Gulp.browserSync.reload)
+			Gulp.self.watch('./js/**/*.js').on('change', Gulp.browserSync.reload)
 		})
 	},
 	imgmin: () => {
@@ -86,7 +87,7 @@ Gulp = {
 	jslibs: () => {
 		Gulp.self.task('jslibs', () => {
 			console.log('[JS] Unindo Libs Js');
-			Gulp.self.src(['./js/src/jquery/jquery.js', './js/src/libs/**/*.js'])
+			Gulp.self.src(['./js/src/jquery/jquery.js', './js/src/bootstrap/bootstrap.js',  './js/src/libs/**/*.js'])
 			.pipe(Gulp.uglify())
 			.pipe(Gulp.concat('all.js'))
 			.pipe(Gulp.self.dest('./js/src/all/'))
