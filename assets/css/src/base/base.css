@@ -234,7 +234,7 @@
           -webkit-transition: background 0.3s, color 0.3s;
           transition: background 0.3s, color 0.3s;
           font-family: "Gotham-Book", sans-serif;
-          color: #FFF;
+          color: #58585a;
           font-weight: 400; }
           #header-menu .bg-shared .menu-container ul li a:hover {
             text-decoration: none; }
@@ -266,7 +266,8 @@
           @media only screen and (max-width: 992px) {
             #header-menu .bg-shared .menu-container ul li a {
               font-size: 2.6rem !important;
-              font-weight: 400; } }
+              font-weight: 400;
+              color: #FFF; } }
           @media only screen and (max-width: 480px) {
             #header-menu .bg-shared .menu-container ul li a {
               font-size: 2rem !important;

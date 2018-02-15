@@ -219,7 +219,8 @@ body {
   margin-bottom: 1.2em;
   line-height: 1.6em;
   text-align: center;
-  padding: 0px 30%; }
+  padding: 0px 30%;
+  font-weight: normal !important; }
   @media only screen and (max-width: 992px) {
     .sub-title-cta {
       margin-bottom: 0.2em;
@@ -251,7 +252,7 @@ textarea, .select2-container .select2-selection--single {
   background-color: rgba(87, 52, 34, 0.6);
   border: none;
   width: 100%;
-  border-radius: 1.8em;
+  border-radius: 10px;
   color: #FFF !important;
   height: 60px;
   padding: 0 1.5em;
@@ -437,12 +438,19 @@ textarea {
     -moz-opacity: 0.03;
     -khtml-opacity: 0.03;
     opacity: 0.03; }
+  #seja-um-franqueado .container {
+    height: 100vh; }
   #seja-um-franqueado .row-home {
-    margin-top: 12.28em; }
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 70px; }
     @media only screen and (max-width: 992px) {
       #seja-um-franqueado .row-home {
-        margin-top: 7.14em; } }
+        margin-top: 40px; } }
     #seja-um-franqueado .row-home h1 {
+      margin-top: 0px;
       margin-bottom: 2.85rem; }
       #seja-um-franqueado .row-home h1:after {
         content: '';
@@ -515,6 +523,7 @@ textarea {
   #duvidas-frequentes .row-duvidas-frequentes .title-section:after {
     top: 2.4em; }
   #duvidas-frequentes .row-duvidas-frequentes .p-light {
+    font-size: 1rem;
     margin-bottom: 2em; }
   #duvidas-frequentes .row-duvidas-frequentes h3 {
     position: relative;
@@ -542,7 +551,7 @@ textarea {
     float: left;
     width: calc(100% - 6em);
     font-family: "Gotham-Book", sans-serif;
-    font-size: 1.2em;
+    font-size: 1rem;
     color: #58585a;
     margin-bottom: 1.4em;
     line-height: 1.4em;
@@ -572,7 +581,8 @@ textarea {
     margin-left: 3em;
     font-family: "Gotham-Book", sans-serif;
     color: #58585a;
-    margin-bottom: 3em; }
+    margin-bottom: 3em;
+    font-size: 1rem; }
   #glossario .box-relative {
     margin-bottom: 2em; }
     #glossario .box-relative input {
@@ -762,7 +772,7 @@ textarea {
     font-family: "Gotham-Book", sans-serif;
     margin-bottom: 2.5em; }
   #contato #form-contact input, #contato #form-contact textarea {
-    border-radius: 40px;
+    border-radius: 10px;
     background-color: #FFF;
     color: #58585a !important;
     margin-bottom: 1.4em; }
@@ -780,7 +790,7 @@ textarea {
       #contato #form-contact input, #contato #form-contact textarea {
         font-size: 1.4em !important; } }
   #contato #form-contact textarea {
-    border-radius: 25px !important; }
+    border-radius: 10px !important; }
   #contato #form-contact button {
     width: 15em;
     margin-top: 1em;
