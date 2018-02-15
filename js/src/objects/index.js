@@ -113,7 +113,8 @@ Index = {
 				autoplay           : true,
 				autoplayTimeout    : 3000,
 				autoplayHoverPause : true,
-				singleItem         : true
+				singleItem         : true,
+				smartSpeed         : 700
 			}
 		},
 		init: function () {
@@ -132,7 +133,8 @@ Index = {
 				autoplayTimeout: 3000,
 				autoplayHoverPause: true,
 				singleItem: true,
-				navText: ["<i class='arrow-prev'></i>","<i class='arrow-next'></i>"]
+				navText: ["<i class='arrow-prev'></i>","<i class='arrow-next'></i>"],
+				smartSpeed: 700
 			});
 			$('#carousel-seguradoras-associadas').on('mouseout', function () {
 				$('#carousel-seguradoras-associadas').trigger('stop.owl.autoplay');
@@ -144,28 +146,28 @@ Index = {
 	ScrollReveal: {
 		configs: {
 			animationSet1: {
-				duration : 900,
+				duration : 1200,
 				origin   : 'left',
 				reset    : true,
 				delay    : 100,
 				scale    : 0.9,
 			},
 			animationSet2: {
-				duration : 900,
+				duration : 1200,
 				origin   : 'top',
 				reset    : true,
 				delay    : 100,
 				scale    : 0.9
 			},
 			animationSet3: {
-				duration : 900,
+				duration : 1200,
 				origin   : 'bottom',
 				reset    : true,
 				delay    : 800,
 				scale    : 0.9
 			},
 			animationSet4: {
-				duration : 900,
+				duration : 1200,
 				origin   : 'right',
 				reset    : true,
 				delay    : 100,

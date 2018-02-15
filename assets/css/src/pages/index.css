@@ -342,6 +342,10 @@ textarea {
 .select2-container--default.select2-container--open.select2-container--below .select2-selection--single, .select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple {
   border-radius: 10px; }
 
+.select2-container--default.select2-container--open.select2-container--above .select2-selection--single,
+.select2-container--default.select2-container--open.select2-container--above .select2-selection--multiple {
+  border-radius: 10px; }
+
 .select2-container.error-form {
   border: none !important; }
   .select2-container.error-form .select2-selection--single {
@@ -350,6 +354,9 @@ textarea {
 .select2-container .select2-results__option--highlighted[aria-selected] {
   background-color: #F94615;
   color: white; }
+
+.select2-container.select2-container--open .select2-dropdown--above {
+  margin-top: 0 !important; }
 
 .select2-container.select2-container--open .select2-dropdown {
   margin-top: -18px;
@@ -477,6 +484,56 @@ textarea {
     opacity: 0.03; }
   #seja-um-franqueado .container {
     height: 100vh; }
+  @media only screen and (max-height: 830px) {
+    #seja-um-franqueado .decoration-1 {
+      height: 20em !important;
+      width: 20em !important;
+      left: 75%;
+      margin-left: -10em !important;
+      top: 20% !important; }
+    #seja-um-franqueado .abf {
+      position: absolute;
+      width: 5em;
+      height: 10em;
+      margin-left: -2.5em;
+      left: 75%;
+      bottom: 2em; } }
+  @media only screen and (max-height: 750px) {
+    #seja-um-franqueado .row-home input {
+      font-size: 1rem !important;
+      height: 45px;
+      padding: 0 1em; }
+    #seja-um-franqueado .row-home h1 {
+      font-size: 2.8em; }
+    #seja-um-franqueado .row-home button {
+      height: 55px; }
+      #seja-um-franqueado .row-home button svg {
+        top: 12px !important; }
+    #seja-um-franqueado .row-home .extra-big {
+      font-size: 4rem; }
+    #seja-um-franqueado .decoration-1 {
+      height: 18em !important;
+      width: 18em !important;
+      left: 75%;
+      margin-left: -9em !important;
+      top: 23% !important; }
+    #seja-um-franqueado .abf {
+      position: absolute;
+      width: 5em;
+      height: 10em;
+      margin-left: -2.5em;
+      left: 75%;
+      bottom: 3em; }
+    #seja-um-franqueado .select2-container.select2-container--open .select2-selection--single .select2-selection__arrow {
+      height: 45px; }
+    #seja-um-franqueado .select2-container .select2-selection--single {
+      height: 45px !important;
+      padding: 0 1rem !important; }
+      #seja-um-franqueado .select2-container .select2-selection--single .select2-selection__rendered {
+        line-height: 45px !important;
+        font-size: 1rem; }
+      #seja-um-franqueado .select2-container .select2-selection--single .select2-selection__arrow {
+        height: 45px; } }
   #seja-um-franqueado .row-home {
     height: 100vh;
     display: flex;
@@ -503,14 +560,29 @@ textarea {
         @media only screen and (max-width: 992px) {
           #seja-um-franqueado .row-home h1:after {
             top: 5em; } }
+        @media only screen and (max-width: 768px) {
+          #seja-um-franqueado .row-home h1:after {
+            top: 4.3em; } }
       @media only screen and (max-width: 992px) {
         #seja-um-franqueado .row-home h1 {
           margin-top: 1.3em; } }
+      @media only screen and (max-width: 768px) {
+        #seja-um-franqueado .row-home h1 {
+          margin-bottom: 0.5em; }
+          #seja-um-franqueado .row-home h1 .extra-big {
+            font-size: 3rem; } }
     #seja-um-franqueado .row-home p {
       margin-top: 1em;
       color: #FFF; }
       #seja-um-franqueado .row-home p span {
         color: #FFF; }
+      @media only screen and (max-width: 768px) {
+        #seja-um-franqueado .row-home p {
+          margin-bottom: 1em; } }
+    @media only screen and (max-width: 768px) {
+      #seja-um-franqueado .row-home input,
+      #seja-um-franqueado .row-home .select2-selection--single {
+        margin-bottom: 0.5em; } }
     #seja-um-franqueado .row-home button {
       left: 50%;
       -webkit-transform: translatex(-12.5rem) !important;
@@ -543,6 +615,9 @@ textarea {
         @media only screen and (max-width: 992px) {
           #seja-um-franqueado .row-home button svg {
             top: 14px; } }
+      @media only screen and (max-width: 768px) {
+        #seja-um-franqueado .row-home button {
+          margin-top: 0.5em; } }
     @media only screen and (max-width: 992px) {
       #seja-um-franqueado .row-home .padding-left {
         padding-left: 0px; } }
@@ -598,7 +673,7 @@ textarea {
 
 #glossario {
   margin-top: 2.14em;
-  margin-bottom: 2.14em; }
+  margin-bottom: 1em; }
   #glossario h3 {
     color: #58585a;
     font-family: "Gotham-Book", sans-serif;
@@ -629,8 +704,9 @@ textarea {
     margin-left: 3em;
     font-family: "Gotham-Book", sans-serif;
     color: #58585a;
-    margin-bottom: 3em;
-    font-size: 1rem; }
+    margin-bottom: 0em;
+    font-size: 1rem;
+    width: calc(100% - 3em); }
   #glossario .box-relative {
     margin-bottom: 2em; }
     #glossario .box-relative input {
