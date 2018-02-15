@@ -70,7 +70,7 @@
         top: 10px; } }
     #header-menu .hamburguer:after, #header-menu .hamburguer:before, #header-menu .hamburguer span {
       content: " ";
-      width: 22px;
+      width: 14px;
       height: 1px;
       display: block;
       background: #F94615;
@@ -79,7 +79,7 @@
       -moz-transform: all 0.25s ease-in-out 0s;
       -ms-transition: all 0.25s ease-in-out 0s;
       transition: all 0.25s ease-in-out 0s;
-      margin-left: 8px; }
+      margin-left: 12px; }
     #header-menu .hamburguer:before {
       margin-top: 11px; }
     #header-menu .hamburguer span {
@@ -111,10 +111,10 @@
       -ms-transform: rotate(45deg) translate(-5px, -6px);
       transform: rotate(45deg) translate(-5px, -6px); }
     #header-menu .hamburguer.active:before {
-      -webkit-transform: rotate(-45deg) translate(-6px, 6px);
-      -moz-transform: rotate(-45deg) translate(-6px, 6px);
-      -ms-transform: rotate(-45deg) translate(-6px, 6px);
-      transform: rotate(-45deg) translate(-6px, 6px); }
+      -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+      -moz-transform: rotate(-45deg) translate(-5px, 6px);
+      -ms-transform: rotate(-45deg) translate(-5px, 6px);
+      transform: rotate(-45deg) translate(-5px, 6px); }
     #header-menu .hamburguer.active span {
       filter: alpha(opacity=0);
       -moz-opacity: 0;

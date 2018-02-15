@@ -229,9 +229,10 @@ body {
       font-size: 1.4em; } }
 
 .img-decorative {
-  height: 12.5em;
-  width: 12.5em;
-  margin-bottom: 2em; }
+  height: 10em;
+  width: 10em;
+  margin-bottom: 2em;
+  margin-top: 1.3em; }
 
 .generic-relative {
   position: relative;

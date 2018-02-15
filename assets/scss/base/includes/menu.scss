@@ -58,13 +58,13 @@
 		}
 		&:after, &:before, span{
 			content: " ";
-			width: 22px;
+			width: 14px;
 			height: 1px;
 			display: block;
 			background: $color-orange;
 			border-radius: 0px;
 			@include transition(.25s);
-			margin-left: 8px;
+			margin-left: 12px;
 		}
 		&:before{
 			margin-top: 11px;
@@ -96,10 +96,10 @@
 				transform: rotate(45deg) translate(-5px, -6px);
 			}
 			&:before{
-				-webkit-transform: rotate(-45deg) translate(-6px, 6px);
-				-moz-transform: rotate(-45deg) translate(-6px, 6px);
-				-ms-transform: rotate(-45deg) translate(-6px, 6px);
-				transform: rotate(-45deg) translate(-6px, 6px);
+				-webkit-transform: rotate(-45deg) translate(-5px, 6px);
+				-moz-transform: rotate(-45deg) translate(-5px, 6px);
+				-ms-transform: rotate(-45deg) translate(-5px, 6px);
+				transform: rotate(-45deg) translate(-5px, 6px);
 			}
 			span{
 				@include opacity(0);
