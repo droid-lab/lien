@@ -1,15 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="602 926.4 38 38">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #58595b;
-      }
-    </style>
-  </defs>
-  <g id="down-arrow" transform="translate(600 926.4)">
-    <g id="Group_56" data-name="Group 56" transform="translate(2)">
-      <path id="Path_48" data-name="Path 48" class="cls-1" d="M38,19A19,19,0,1,0,19,38,19.022,19.022,0,0,0,38,19ZM1.9,19A17.1,17.1,0,1,1,19,36.1,17.12,17.12,0,0,1,1.9,19Z"/>
-      <path id="Path_49" data-name="Path 49" class="cls-1" d="M170.966,144.532l5.339-5.339a.948.948,0,0,0-1.341-1.341l-3.719,3.719V127.353a.953.953,0,1,0-1.906,0v14.211l-3.719-3.719a.948.948,0,1,0-1.341,1.341l5.339,5.339a.964.964,0,0,0,1.348.008Z" transform="translate(-151.292 -116.606)"/>
-    </g>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="602 926.4 38 38"><defs><style>.cls-1{fill:#58595b}</style></defs><g id="down-arrow" transform="translate(600 926.4)"><g id="Group_56" data-name="Group 56" transform="translate(2)"><path id="Path_48" data-name="Path 48" class="cls-1" d="M38 19a19 19 0 1 0-19 19 19.022 19.022 0 0 0 19-19zM1.9 19A17.1 17.1 0 1 1 19 36.1 17.12 17.12 0 0 1 1.9 19z"/><path id="Path_49" data-name="Path 49" class="cls-1" d="M170.966 144.532l5.339-5.339a.948.948 0 0 0-1.341-1.341l-3.719 3.719v-14.218a.953.953 0 1 0-1.906 0v14.211l-3.719-3.719a.948.948 0 1 0-1.341 1.341l5.339 5.339a.964.964 0 0 0 1.348.008z" transform="translate(-151.292 -116.606)"/></g></g></svg>

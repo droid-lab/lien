@@ -41,7 +41,7 @@ Gulp = {
 	imgmin: () => {
 		Gulp.self.task('imgmin', () => {
 			console.log('[IMAGEMIN] Otimizando as Imagens')
-			Gulp.self.src('./assets/images/**/*')
+			Gulp.self.src('./assets/images/**/*.{jpg,jpeg,png,gif}')
 			.pipe(Gulp.imagemin())
 			.pipe(Gulp.self.dest('./assets/images/'))
 		})
@@ -94,14 +94,14 @@ Gulp = {
 		});
 	},
 	default: () => {
-		Gulp.self.task('default', ['js', 'scss', 'css', 'svgopt', 'jslibs', 'imgmin', 'serve']);
+		Gulp.self.task('default', ['js', 'scss', 'css', 'jslibs', 'imgmin']);
 	},
 	watch: () => {
 		Gulp.self.task('watch', () => {
 			Gulp.self.watch('./js/**/*.js', ['js', 'jslibs']);
 			Gulp.self.watch('./assets/css/src/**', ['css']);
 			Gulp.self.watch('./assets/scss/**', ['scss']);
-			Gulp.self.watch('./assets/images/**/*.svg', ['svgo']);
+			Gulp.self.watch('./assets/images/**/*.svg', ['svgopt']);
 		});
 	},
 	wsass: () => {

@@ -5,7 +5,8 @@
   "description": "Repositório para organizar o Front-End do projeto LIEN",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+	"serve": "gulp serve",
+	"build": "gulp"
   },
   "author": "Diogo Cezar <diogo@diogocezar.com>",
   "license": "MIT",

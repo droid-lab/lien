@@ -1,15 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="1506 9485 65.961 66">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #fff;
-      }
-    </style>
-  </defs>
-  <g id="Group_51" data-name="Group 51" transform="translate(1506 9485)">
-    <rect id="Rectangle_613" data-name="Rectangle 613" class="cls-1" width="19.982" height="1.94" transform="translate(23.009 45.125)"/>
-    <rect id="Rectangle_614" data-name="Rectangle 614" class="cls-1" width="19.982" height="1.94" transform="translate(23.009 18.935)"/>
-    <rect id="Rectangle_615" data-name="Rectangle 615" class="cls-1" width="19.982" height="1.94" transform="translate(23.009 31.933)"/>
-    <path id="Path_47" data-name="Path 47" class="cls-1" d="M32.981,1.552A31.429,31.429,0,1,0,64.409,32.981,31.5,31.5,0,0,0,32.981,1.552m0,64.448A33,33,0,1,1,65.961,32.981,33.028,33.028,0,0,1,32.981,66"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="1506 9485 65.961 66"><defs><style>.cls-1{fill:#fff}</style></defs><g id="Group_51" data-name="Group 51" transform="translate(1506 9485)"><path id="Rectangle_613" data-name="Rectangle 613" class="cls-1" transform="translate(23.009 45.125)" d="M0 0h19.982v1.94H0z"/><path id="Rectangle_614" data-name="Rectangle 614" class="cls-1" transform="translate(23.009 18.935)" d="M0 0h19.982v1.94H0z"/><path id="Rectangle_615" data-name="Rectangle 615" class="cls-1" transform="translate(23.009 31.933)" d="M0 0h19.982v1.94H0z"/><path id="Path_47" data-name="Path 47" class="cls-1" d="M32.981 1.552a31.429 31.429 0 1 0 31.428 31.429A31.5 31.5 0 0 0 32.981 1.552m0 64.448a33 33 0 1 1 32.98-33.019A33.028 33.028 0 0 1 32.981 66"/></g></svg>
