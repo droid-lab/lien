@@ -464,6 +464,46 @@ textarea {
 	}
 }
 
+#banner{
+	@extend .default-section;
+	height: calc(100vh - 70px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 70px;
+	background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(65, 61, 61, 0.3)), url('../../../images/lien-bg-banner.jpg');
+	.box-banner{
+		max-width: 75vw;
+		h1 {
+			font-size: 8em;
+			width: 100%;
+			color: white;
+			text-align: center;
+			@include responsive(s2) {
+				font-size: 5em;
+			}
+		}
+		h2 {
+			font-size: 3em;
+			color: $color-orange;
+			text-align: center;
+			@include responsive(s2) {
+				font-size: 2.5em;
+			}
+		}
+		p {
+			margin-top: 2.5em;
+			text-align: center;
+			font-size: 1.3em;
+			color: $color-white;
+			padding: 0 10%;
+			@include responsive(s2) {
+				padding: 0;
+			}
+		}
+	}
+}
+
 #seja-um-franqueado {
 	@extend .default-section;
 	background: linear-gradient( rgba(249, 70, 21, 0.4), rgba(249, 70, 21, 0.4)), url('../../../images/lien-bg-top.jpg');

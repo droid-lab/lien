@@ -391,7 +391,7 @@ textarea {
   .select2-container .select2-selection--single .select2-selection__arrow b {
     border-color: #FFF transparent transparent transparent; }
 
-.default-section, .cta-default, #seja-um-franqueado, #seja-um-franqueado .row-home .box-relative, #sobre, #duvidas-frequentes, #glossario, #glossario h3, #glossario h4, #glossario .title-glossario, #glossario .description-glossario, #glossario .box-relative, #seguradoras-associadas, #seguradoras-associadas .box-relative, #contato, footer {
+.default-section, .cta-default, #banner, #seja-um-franqueado, #seja-um-franqueado .row-home .box-relative, #sobre, #duvidas-frequentes, #glossario, #glossario h3, #glossario h4, #glossario .title-glossario, #glossario .description-glossario, #glossario .box-relative, #seguradoras-associadas, #seguradoras-associadas .box-relative, #contato, footer {
   position: relative;
   float: left;
   width: 100%; }
@@ -422,6 +422,40 @@ textarea {
     .cta-default .row-cta button {
       height: 50px;
       line-height: 50px; } }
+
+#banner {
+  height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(65, 61, 61, 0.3)), url("../../../images/lien-bg-banner.jpg"); }
+  #banner .box-banner {
+    max-width: 75vw; }
+    #banner .box-banner h1 {
+      font-size: 8em;
+      width: 100%;
+      color: white;
+      text-align: center; }
+      @media only screen and (max-width: 992px) {
+        #banner .box-banner h1 {
+          font-size: 5em; } }
+    #banner .box-banner h2 {
+      font-size: 3em;
+      color: #F94615;
+      text-align: center; }
+      @media only screen and (max-width: 992px) {
+        #banner .box-banner h2 {
+          font-size: 2.5em; } }
+    #banner .box-banner p {
+      margin-top: 2.5em;
+      text-align: center;
+      font-size: 1.3em;
+      color: #FFF;
+      padding: 0 10%; }
+      @media only screen and (max-width: 992px) {
+        #banner .box-banner p {
+          padding: 0; } }
 
 #seja-um-franqueado {
   background: linear-gradient(rgba(249, 70, 21, 0.4), rgba(249, 70, 21, 0.4)), url("../../../images/lien-bg-top.jpg");

@@ -10,13 +10,13 @@
   "author": "Diogo Cezar <diogo@diogocezar.com>",
   "license": "MIT",
   "devDependencies": {
-    "browser-sync": "^2.23.6",
+    "browser-sync": "^2.24.5",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-cssmin": "^0.2.0",
-    "gulp-imagemin": "^4.0.0",
-    "gulp-sass": "3.1.0",
-    "gulp-svgo": "^1.2.5",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-svgo": "^1.5.4",
     "gulp-uglify": "^3.0.0"
   }
 }
